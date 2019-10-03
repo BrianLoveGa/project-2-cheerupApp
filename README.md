@@ -15,10 +15,14 @@ __Goals__
 
 __Bronze__ - an app where cheerups can be viewed - and new ones created - can view all - can edit - can delete
 
-__Silver__ - users profiles exist -  can up vote and down vote the exisitng and created cheer ups - they will be shown by rank on main page - your profile shows if any of your cheerups are in top nine on main page 
+__Silver__ - users profiles exist -  can up vote  the cheer ups - they will be shown by rank on main page 
 
 
 __Gold__
+
+your profile shows if any of your cheerups are in top nine on main page 
+
+
 Let users sign in with a third-party account (Facebook, Twitter, GitHub, ... etc.)
 
 *****
