@@ -10,9 +10,12 @@ const CheerUps = require("../model/cheerApp");
 /// list all cheer ups - home page
 
 router.get('/', (req, res) =>{
-    CheerUps.find({}).then(cheers => 
-        res.render("index", {cheers}));
-});
+    CheerUps.find({})
+    .then(cheers => {
+        res.render("index", {cheers});
+    })    
+    .catch(err => console.error(err));
+  });
 
 
 /// make a cheerup page
