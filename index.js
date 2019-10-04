@@ -2,7 +2,6 @@ const express = require("express");
 const hbs = require('handlebars')
 const cors = require('cors');
 const parser = require("body-parser");
-const lolo = require('lodash');
 const methMan = require('method-override');
 
 // find controllers
