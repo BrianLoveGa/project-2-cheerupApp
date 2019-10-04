@@ -1,3 +1,6 @@
+// const document = ('')
+
+
 const cheerUps = document.querySelector('.cheers')
 const submit = document.getElementById('submit')
 
@@ -9,7 +12,6 @@ function addCheerUps (cheerData) {
   
       const imageNode = document.createElement('img')
       imageNode.setAttribute('src', cheer.title)
-      imageNode.setAttribute('body', cheer.cheerup)
       imageNode.classList.add('cheerup')
   
     //   imageNode.addEventListener('click', () => { editModal(cheer) })
@@ -19,7 +21,7 @@ function addCheerUps (cheerData) {
   };
 
   /// axios to run get function
-  
+
 axios.get('http://localhost:3000/cheerups').then(response => {
   // gets the initial data
   addCheerUps(response.data)
