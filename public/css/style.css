@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap');
+
+body{
+    background-color: aqua;
+}
+
+h1{
+    font-family: 'Happy Monkey', cursive, sans-serif;
+    font-size:40px;
+    text-align: center;
+}
+
+
+
+
+.cheers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
+.cheerup{
+    background-color: rgb(204, 243, 10);
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}

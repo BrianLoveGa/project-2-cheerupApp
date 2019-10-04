@@ -16,11 +16,12 @@ __Goals__
 
 __Bronze__ 
 
-An app where cheerups can be viewed by public (users)- and new ones created / editable / deleteable - by me (creator). Deployed via Heroku site.
+An app where cheerups can be viewed by public (users)- and new ones created / editable / deleteable - by me (creator). Deployed via Heroku site. light blue background - yellow cheerup background.
 
 __Silver__ 
 
 Users profiles exist (passport). Then they can up vote  the cheer ups or make new ones. Also edit and delete ones they made. 
+Can pick one of 3 colors for background of their cheerup. 
 
 __Gold__
 

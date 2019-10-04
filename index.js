@@ -5,13 +5,10 @@ const parser = require("body-parser");
 const lolo = require('lodash');
 const methMan = require('method-override');
 
-
-
-
+// find controllers
 const userController = require("./controller/users");
 
 const cheerController = require('./controller/cheer');
-
 
 // instantiate express
 const app = express();
@@ -25,18 +22,25 @@ app.use(parser.json());
 // use hbs for views
 app.set('view engine', 'hbs'); 
 
+// styles
+app.use(express.static("public"));
+
+// use cors
 app.use(cors());
 
+// use controllers
 app.use("/cheerups", cheerController);
 
 app.use("/cheerups/users", userController);
 
 
+// redirect main to cheerups main
 app.get("/", (req, res) => {
     res.redirect("/cheerUps");
   });
 
 
+/// connection mon
 app.set("port", process.env.PORT || 3000);
 
 app.listen(app.get("port"), () => {
