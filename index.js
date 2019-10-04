@@ -14,7 +14,7 @@ const cheerController = require('./controller/cheer');
 const app = express();
 
 // to stop error message
-app.use(parser.urlencoded({ useUnifiedTopology: true}));
+app.use(parser.urlencoded({ extended: true }));
 
 // convert json string to object
 app.use(parser.json());

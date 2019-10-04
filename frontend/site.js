@@ -1,30 +1,30 @@
 console.log("TESTING CHECK CHECK");
 
-// const cheerUps = document.querySelector('.cheers')
-// const submit = document.getElementById('submit')
+const cheerUps = document.querySelector('.cheers')
+const submit = document.getElementById('submit')
 
-// function addCheerUps (cheerData) {
-//     // Adds all of the Cheer Ups to the dom
-//     cheerUps.innerHTML = ''
-//     cheerData.forEach(cheer => {
-//       if (!cheer.title) return
+function addCheerUps (cheerData) {
+    // Adds all of the Cheer Ups to the dom
+    cheerUps.innerHTML = ''
+    cheerData.forEach(cheer => {
+      if (!cheer.title) return
   
-//       const imageNode = document.createElement('img')
-//       imageNode.setAttribute('src', cheer.title)
-//       imageNode.classList.add('cheerup')
+      const imageNode = document.createElement('img')
+      imageNode.setAttribute('src', cheer.title)
+      imageNode.classList.add('cheerup')
   
-//     //   imageNode.addEventListener('click', () => { editModal(cheer) })
+    //   imageNode.addEventListener('click', () => { editModal(cheer) })
   
-//       cheerUps.appendChild(imageNode)
-//     })
-//   };
+      cheerUps.appendChild(imageNode)
+    })
+  };
 
-//   /// axios to run get function
+  /// axios to run get function
 
-// axios.get('http://localhost:3000/cheerups').then(response => {
-//   // gets the initial data
-//   addCheerUps(response.data)
-// });
+axios.get('http://localhost:3000/cheerups').then(response => {
+  // gets the initial data
+  addCheerUps(response.data)
+});
 
 
 // initializes modal package
