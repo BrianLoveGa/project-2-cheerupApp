@@ -1,0 +1,26 @@
+[
+
+    {
+        "name": "Brian Loveless",
+        "username": "ADMIN",
+        "email": "Brian.loveless1@gmail.com",
+        "password": "WORDpass42"
+
+    },
+
+    {
+        "name": "Jimmy Fakeman1",
+        "username": "Fakeman1",
+        "email": "Iamnotreal@noemail.org",
+        "password": "1234pass"
+
+    },
+
+    {
+        "name": "Stacey Fakegirl2",
+        "username": "Fakegirl2",
+        "email": "Imaginaryperson@notreal.org",
+        "password": "pass1234"
+        
+    }
+]

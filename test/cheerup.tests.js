@@ -13,7 +13,7 @@ const api = supertest('http://localhost:3000');
 describe("GET /cheerUps", () => {
     it("should return a 200 response", done => {
       api
-        .get("/cheerUps")
+        .get("/")
         .set("Accept", "application/json")
         .expect(200, done)
         
