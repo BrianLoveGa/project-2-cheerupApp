@@ -9,7 +9,7 @@ const CheerUps = require("../model/cheerApp");
 
 /// list all cheer ups - home page
 
-router.get('/cheerups', (req, res) =>{
+router.get('/', (req, res) =>{
     CheerUps.find({}).then(cheers => 
         res.render("index", {cheers}));
 });

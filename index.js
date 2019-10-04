@@ -14,10 +14,14 @@ const cheerController = require('./controller/cheer');
 const app = express();
 
 // to stop error message
-app.use(parser.urlencoded({ extended: true }));
+app.use(parser.urlencoded({ useUnifiedTopology: true}));
 
 // convert json string to object
 app.use(parser.json());
+
+// to use method override
+app.use(methMan("_method"));
+
 
 // use hbs for views
 app.set('view engine', 'hbs'); 

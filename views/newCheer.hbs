@@ -1,0 +1,19 @@
+<h3>Add a ' Cheer Up ' to our list </h3>
+<div class="space">
+<form name="form1" action="/{{id}}?_method=put" method="POST">
+    <label for="title">Cheer Up Title</label>
+    <input type="text" name="title" value="{{title}}">
+    <label for="cheerup">Cheer Up Quip</label>
+    <input type="text" name="cheerup" value="{{cheerup}}">
+    <label for "creator">creator of this cheer up</label> 
+    <input creator="text" name="creator" value="{{creator}}">
+    <label for="backgroundColor"> Back Ground Color </label>
+    <input  type="text" name="backgroundColor" value="{{backgroundColor}}">
+    <input class="button" type="submit" value="Update">
+
+</form>
+</div>
+<h3> Click the delete button below to permanently remove a Cheer Up .</h3>
+<form action="/{{id}}?_method=delete" method="post">
+    <input class="button delete" type="submit" value="Delete">
+</form>
