@@ -19,13 +19,13 @@ router.get('/', (req, res) =>{
 
 
 /// make a cheerup page
-router.get("/cheerups/new", (req, res) => {
+router.get("/new", (req, res) => {
     res.render("newCheer");
   });
 
 
 // show one cheerup
-  router.get("/cheerups/:id", (req, res) => {
+  router.get("/:id", (req, res) => {
     CheerUps.findById(req.params.id).then(cheer => {
       res.render("showCheer", cheer);
     });
@@ -39,7 +39,7 @@ router.get("/cheerups/new", (req, res) => {
   });
 
   // edit a cheer Up page
-  router.get("/cheerups/edit/:id", (req, res) => {
+  router.get("/edit/:id", (req, res) => {
     CheerUps.findById(req.params.id).then(cheer => {
       res.render("editCheer", cheer);
     });
