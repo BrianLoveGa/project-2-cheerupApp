@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 body{
     background-color: aqua;
+
+}
+
+.head {
     display: flex;
     flex-direction: column;
     padding: 0 2%;
@@ -11,6 +15,24 @@ h1{
     font-family: 'Happy Monkey', cursive, sans-serif;
     font-size:40px;
     text-align: center;
+
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+    border: 3px solid red;
+    border-radius: 25px;
+    
+}
+
+h2, h3, a {
+    text-align: center;
+    text-decoration: none;
+    color:black;
 }
 
 .top {
@@ -19,6 +41,7 @@ h1{
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin: 5% 0;
     padding: 5px;
     border: 5px solid salmon;
     border-radius: 10px;
@@ -30,9 +53,10 @@ h1{
     flex: 1 auto;
     text-decoration: none;
     background-color: blue;
-    color: white;
+    color:  rgb(172, 172, 245);
     font-size: 30px;
     justify-content: space-between;
+    text-align: center;
 
 }
 
@@ -40,10 +64,12 @@ h1{
     -webkit-flex: 1 auto;
     flex: 1 auto;
     text-decoration: none;
-    background-color: rgb(85, 85, 243);
-    color: white;
+    background-color:rgb(54, 54, 248);
+    color:white;
     font-size: 32px;
     justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
 
 }
 
@@ -94,25 +120,25 @@ h1{
 
 
 .cheersmain {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-
-.cheers {
-    background-color: rgb(204, 243, 10);
-    width: 100%;
-    height: 300px;
-    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
 
 .cheerup{
-    background-color: rgb(204, 243, 10);
-    width: 100%;
+    
+    font-size: 30px;
+    background-color: rgb(247, 242, 109);
+    width: 250px;
     height: 300px;
-    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px;
+    font-family: 'Mansalva', cursive, serif;
 }
 
 

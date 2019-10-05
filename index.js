@@ -37,10 +37,7 @@ app.use("/cheerups", cheerController);
 app.use("/cheerups/users", userController);
 
 
-// redirect main to cheerups main
-app.get("/", (req, res) => {
-    res.redirect("/cheerUps");
-  });
+
 
 
 /// connection mon

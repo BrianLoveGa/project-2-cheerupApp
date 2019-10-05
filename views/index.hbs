@@ -1,10 +1,14 @@
+
 <div class="cheersmain">
 
-<div class='cheers'>
-    {{#each cheers}}
-    <i class="far fa-smile-beam-xs"></i><h2></h2>{{this.title}}</h2>
-    <div class='cheerup'>{{this.cheerup}}</div><h3>{{this.creator}}</h3>
-    {{/each}}
-</div>
+    <div class='cheers'>
+        {{#each cheers}}
+        <h2> <i class="far fa-smile"></i> <a href="editCheer.hbs"> {{ this.title }} </a> <i class="far fa-smile-beam"></i></i>  </h2>
 
+        <div class='cheerup'>{{this.cheerup}}</div>
+
+        <h3> by:<a href=`/showUser${{this.id}}`> {{this.creator}}</a></h3>
+        {{/each}}
     </div>
+
+</div>

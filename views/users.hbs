@@ -1,5 +1,9 @@
-<ul class='list-view'>
+<ul class='users-view'>
     {{#each peeps}}
-    <li><i class="far fa-user-xs"></i><a href="/{{this.id}}">{{this.name}}{{this.username}}{{this.email}}</a></li>
+    <li>
+        <i class="far fa-user-xs"></i>
+        <a href="/{{this.id}}">{{this.name}}{{this.username}}{{this.email}}
+        </a>
+    </li>
     {{/each}}
 </ul>
