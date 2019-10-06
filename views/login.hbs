@@ -1,11 +1,17 @@
-<form name="form1" action="/users/login" method="Get"></form>
+<div class="login">
 
-<label for="username">Cheer Ups User Name</label>
-    <input type="text" name="username" value="{{username}}">
-
-    <label for "password">password for cheer up site</label> 
-    <input type="text" name="password" value="{{password}}">
-
+    <form name="form1" action="/users/login" method="Get"></form>
+    <section class="logtop"> 
+    <label for="username">Cheer Ups User Name:</label>
+    <input type="text" name="username" value="{{username}}" maxlength="40" size="42">
+    </section>
+    <section class="logmid">
+    <label for "password">Password for Cheer Ups: </label> 
+    <input type="text" name="password" value="{{password}}" maxlength="25" size="26">
+    </section>
+    <section class="logbtn">
     <input class="button" type="submit" value="Create">
-
+    </section>
     </form>
+
+</div>

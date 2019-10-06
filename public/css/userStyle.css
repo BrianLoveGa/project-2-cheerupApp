@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+body{
+    background-color: aqua;
+
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+h1{
+    font-family: 'Happy Monkey', cursive, sans-serif;
+    font-size:40px;
+    text-align: center;
+
+}
+
+
+.top {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 5% 0;
+    padding: 5px;
+    border: 5px solid salmon;
+    border-radius: 10px;
+
+}
+
+.top a{
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    text-decoration: none;
+    background-color: blue;
+    color:  rgb(172, 172, 245);
+    font-size: 30px;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.top a:hover{
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    text-decoration: none;
+    background-color:rgb(54, 54, 248);
+    color:white;
+    font-size: 32px;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.second{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: green;
+    margin: 2% 0;
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+    border: 3px yellowgreen solid;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.second:hover {
+
+    font-size: 28px;
+    background-color: yellowgreen;
+    border: 5px black solid;
+    border-radius: 13px;
+    padding: 12px;
+    
+
+}
+
+
+.second a {
+
+    
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: crimson;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+
+
+
+.login {
+
+    position: relative;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    background-color: rgb(121, 6, 121);
+    color: white;
+    height: 300px;
+    width: 80%;
+    align-self: center;
+    margin: 15px;
+    padding: 20px;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+    
+}
+
+
+.newAct {
+
+
+    position: relative;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    background-color: rgb(245, 212, 140);
+    color: rgb(0, 0, 0);
+    height: 300px;
+    width: 80%;
+    align-self: center;
+    margin: 15px;
+    padding: 20px;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+
+.showUser{
+
+    background-color: beige;
+}

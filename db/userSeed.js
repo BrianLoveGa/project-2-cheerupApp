@@ -1,5 +1,5 @@
 const People = require('../model/userApp');
-const people = require('./userSeeds.json');
+const people = require('./UserSeeds.json');
 
 
 // clear the database of all user records insert original seeds

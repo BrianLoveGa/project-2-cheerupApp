@@ -60,16 +60,6 @@ router.get("/edit", (req, res) => {
 
 
 // see a cheerup on edit page by id
-router.get("/:id", (req, res) => {
-  CheerUps.findOne({ _id: req.params.id })
-    .then(cheer => {
-      res.render("editCheer", cheer);
-    })
-    .catch(err => console.error(err));
-});
-
-
-
 // show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  and delete from here
 
 router.get("/edit/:id", (req, res) => {
@@ -84,7 +74,7 @@ router.get("/edit/:id", (req, res) => {
 
 /// make an edit work
 
-  router.put("/:id", (req, res) => {
+  router.put("/edit/:id", (req, res) => {
     CheerUps.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true
     }).then(cheerup => {
@@ -97,7 +87,7 @@ router.get("/edit/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
     CheerUps.findByIdAndRemove(req.params.id).then(() => {
-      res.redirect("/");
+      res.redirect("/cheerUps");
     });
 });  
 

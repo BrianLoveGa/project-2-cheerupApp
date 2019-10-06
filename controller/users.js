@@ -31,30 +31,58 @@ router.get("/newAccount", (req, res) => {
   });
 
 
-// show one user
-router.get("/:id", (req, res) => {
-    Users.findById(req.params.id).then(user => {
-      res.render("showUser", user);
-    });
+router.get("/edit", (req, res) => {
+    res.render("editUser");
+  });  
+
+  router.get("/edit/:id", (req, res) => {
+    console.log(req.params);
+      Users.findOne({_id: req.params.id}).then(user => {
+        console.log(user);
+        res.render("editUser", user);
+      })
+      .catch(err => console.error(err));
   });
+
+
+
+
+
+router.get("/showUser", (req, res) => {
+    res.render("showUser");
+});  
+
+
+
+// show one user
+router.get("/showUser/:id", (req, res) => {
+    Users.findOne({_id: req.params.id}).then(user => {
+      res.render("showUser", user);
+    })
+    .catch(err => console.error(err));
+  });
+
+
+
 
 // make new account redirect to login page after
 
-  router.post("/newAccount", (req, res) => {
+router.post("/newAccount", (req, res) => {
     Users.create(req.body).then(newuser => {
       res.redirect("/login");
     });
-  });
+});
 
 
   // edit account page
-  router.get("/edit/:id", (req, res) => {
-    Users.findById(req.params.id).then(user => {
+router.get("/:id", (req, res) => {
+    Users.findById({ _id: req.params.id }).then(user => {
       res.render("newAccount", user);
     });
-  });
+});
 
  /// make an edit work
+ 
  router.put("/:id", (req, res) => {
     Users.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true
@@ -65,9 +93,10 @@ router.get("/:id", (req, res) => {
 
 
 /// delete it go to home page
+
 router.delete("/:id", (req, res) => {
     Users.findByIdAndRemove(req.params.id).then(() => {
-      res.redirect("/");
+      res.redirect("/cheerUps");
     });
   });  
 

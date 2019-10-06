@@ -1,9 +1,13 @@
 <ul class='users-view'>
     {{#each peeps}}
     <li>
-        <i class="far fa-user-xs"></i>
-        <a href="/{{this.id}}">{{this.name}}{{this.username}}{{this.email}}
+
+        <a href="/users/edit/{{this.id}}">{{this.name}}
         </a>
+        {{this.username}}
+        😻
+        {{this.email}}
+        
     </li>
     {{/each}}
 </ul>
