@@ -8,7 +8,7 @@ const CheerUps = require("../model/cheerApp");
 
 
 
-/// list all cheer ups - home page
+/// list all cheer ups - home page - working
 
 router.get('/', (req, res) =>{
     CheerUps.find({})
@@ -40,11 +40,14 @@ router.route("/new")
   .get(function (req, res) {
     res.render("newCheer");
   })
+ // need to fix
   .post(function (req, res){
     CheerUps.create(req.body).then(() => {
       res.redirect("/");
   })
 })
+
+/// working
 .delete(function (req, res){
   CheerUps.findByIdAndRemove(req.params.id).then(() => {
     res.redirect("/");
@@ -52,15 +55,18 @@ router.route("/new")
 
 });
 
-/// edit page blank exists
+
+
+
+/// edit page blank exists - working
 
 router.get("/edit", (req, res) => {
   res.render("editCheer");
 });
 
 
-// see a cheerup on edit page by id
-// show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  and delete from here
+// see a cheerup on edit page by id - working
+// show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  
 
 router.get("/edit/:id", (req, res) => {
   console.log(req.params);
@@ -72,7 +78,7 @@ router.get("/edit/:id", (req, res) => {
 });
 
 
-/// make an edit work
+/// make an edit work need to fix
 
   router.put("/edit/:id", (req, res) => {
     CheerUps.findOneAndUpdate({ _id: req.params.id }, req.body, {
@@ -83,7 +89,7 @@ router.get("/edit/:id", (req, res) => {
 });
 
 
-/// delete it go home page
+/// delete it go home page - working
 
 router.delete("/:id", (req, res) => {
     CheerUps.findByIdAndRemove(req.params.id).then(() => {

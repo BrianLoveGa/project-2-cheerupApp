@@ -65,7 +65,7 @@ router.get("/showUser/:id", (req, res) => {
 
 
 
-// make new account redirect to login page after
+// make new account redirect to login page after - need to fix
 
 router.post("/newAccount", (req, res) => {
     Users.create(req.body).then(newuser => {
@@ -81,7 +81,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
- /// make an edit work
+ /// make an edit work - need to fix
  
  router.put("/:id", (req, res) => {
     Users.findOneAndUpdate({ _id: req.params.id }, req.body, {
@@ -92,7 +92,7 @@ router.get("/:id", (req, res) => {
   });
 
 
-/// delete it go to home page
+/// delete it go to home page - working
 
 router.delete("/:id", (req, res) => {
     Users.findByIdAndRemove(req.params.id).then(() => {
