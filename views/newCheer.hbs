@@ -1,19 +1,34 @@
 <h3>Add a ' Cheer Up ' to our list </h3>
-<div class="space">
-<form name="form1" action="/{{id}}?_method=put" method="POST">
+<div class="newCheerForm">
+<form  name="formNC" action="/{{id}}?_method=put" method="POST">
+    <section class="firstNC">
     <label for="title">Cheer Up Title</label>
-    <input type="text" name="title" value="{{title}}">
+    <input type="text" name="title" value="{{title}}" maxlength="40" size="42">
+    </section>
+    <section class="secondNC">
     <label for="cheerup">Cheer Up Quip</label>
-    <input type="text" name="cheerup" value="{{cheerup}}">
-    <label for "creator">creator of this cheer up</label> 
-    <input creator="text" name="creator" value="{{creator}}">
-    <label for="backgroundColor"> Back Ground Color </label>
-    <input  type="text" name="backgroundColor" value="{{backgroundColor}}">
-    <input class="button" type="submit" value="Update">
+    <input type="text" name="cheerup" value="{{cheerup}}"maxlength="141" size="142">
+    </section>
+    <section class="thirdNC">
+    <label for "creator">Creator of this Cheer Up</label> 
+    <input creator="text" name="creator" value="{{creator}}"maxlength="40" size="42">
+    </section>
+    <section class="fourthNC">
+    <label for="backgroundColor"> Back Ground Color : </label>
+    <div class="colorbuttons"></div>
+    <input class="buttony" type="radio" name="color" value="yellow"> <div class ="buttonlbly">Yellow  </div>
+    <input class="buttonp" type="radio" name="color" value="pink"> <div class="buttonlblp">Pink  </div>
+    <input class="buttong" type="radio" name="color" value="green"> <div class="buttonlblg">Green </div>
+    </section>
+
+    
+
+    <input class="buttonNCS" type="submit" value="Add New Cheer">
 
 </form>
 </div>
+
 <h3> Click the delete button below to permanently remove a Cheer Up .</h3>
 <form action="/{{id}}?_method=delete" method="post">
-    <input class="button delete" type="submit" value="Delete">
+    <input class="buttondelete" type="submit" value="Delete">
 </form>

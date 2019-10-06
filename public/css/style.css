@@ -143,7 +143,74 @@ h2, h3, a {
 
 
 
+.newCheerForm {
+
+    margin: 15px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgb(50, 69, 241);
+    width: 80%;
+    color: whitesmoke;
+
+}
+
+.colorbuttons {
+    display: inline-block;
+}
+
+.firstNC, 
+.secondNC, 
+.thirdNC,
+.fourthNc  {
+    margin: 5% 3%;
+    padding: 25px;
+    color: whitesmoke;
+}
 
 
+
+.buttony , .buttonlbly {
+    display: inline-block;
+    background-color: yellow;
+    font-size: 20px;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttonp, .buttonlblp {
+    display: inline-block;
+    background-color: pink;
+    font-size: 20px;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.buttong, .buttonlblg {
+    display: inline-block;
+    background-color: yellowgreen;
+    font-size: 20px;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.buttonNCS, .buttondelete {
+    
+    font-size: 40px;
+    text-align: center;
+    padding:25px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 3%;
+    
+}
 
 
