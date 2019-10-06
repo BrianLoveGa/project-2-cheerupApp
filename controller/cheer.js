@@ -73,7 +73,9 @@ router.get("/:id", (req, res) => {
 // show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  and delete from here
 
 router.get("/edit/:id", (req, res) => {
-    CheerUps.findOne(req.params.id).then(cheer => {
+  console.log(req.params);
+    CheerUps.findOne({_id: req.params.id}).then(cheer => {
+      console.log(cheer);
       res.render("editCheer", cheer);
     })
     .catch(err => console.error(err));

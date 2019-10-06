@@ -34,7 +34,7 @@ app.use(cors());
 // use controllers
 app.use("/cheerups", cheerController);
 
-app.use("/cheerups/users", userController);
+app.use("/users", userController);
 
 
 
