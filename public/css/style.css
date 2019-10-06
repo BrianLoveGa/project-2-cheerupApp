@@ -148,10 +148,16 @@ h2, h3, a {
     margin: 15px;
     padding: 20px;
     font-size: 25px;
-    background-color: rgb(50, 69, 241);
     width: 100%;
     color: whitesmoke;
+}
 
+.newCheerForm{
+    background-color: rgb(50, 69, 241);
+}
+
+.editCheer {
+    background-color: rgb(160, 124, 7);
 }
 
 .colorbuttons {
