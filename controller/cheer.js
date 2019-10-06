@@ -40,23 +40,30 @@ router.route("/new")
   .get(function (req, res) {
     res.render("newCheer");
   })
- // need to fix
-  .post(function (req, res){
-    CheerUps.create(req.body).then(() => {
-      res.redirect("/");
-  })
-})
-
-/// working
+         // need to fix
+//   .post(function (req, res){
+//     CheerUps.create(req.body).then(() => {
+//       res.redirect("/");
+//   })
+// })
+             /// working
 .delete(function (req, res){
   CheerUps.findByIdAndRemove(req.params.id).then(() => {
     res.redirect("/");
   })
-
 });
+///// end of new cheer route
 
-
-
+router.post("/new", (req,res)=>{
+  CheerUps.create(req.body)
+  console.log(req.body)
+  .then(cheer =>{
+    console.log(cheer)
+    res.redirect("/cheerUps");
+  })
+  .catch(err => console.error(err)
+);
+});
 
 /// edit page blank exists - working
 
@@ -96,7 +103,6 @@ router.delete("/:id", (req, res) => {
       res.redirect("/cheerUps");
     });
 });  
-
 
 
 /// ⇡ end of line ⇪ all people routes must be ⇑ above here ⇧
