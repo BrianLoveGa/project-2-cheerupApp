@@ -80,11 +80,11 @@ router.get("/edit/:id", (req, res) => {
 
 /// make an edit work need to fix
 
-  router.put("/edit/:id", (req, res) => {
+  router.put("/:id", (req, res) => {
     CheerUps.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true
     }).then(cheerup => {
-      res.redirect(`/${cheerup.id}`);
+      res.redirect("/cheerUps");
     });
 });
 

@@ -100,7 +100,12 @@ h1{
 }
 
 
-
+.usersView{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 25px;
+    margin:5px;
+}
 
 .login {
 
@@ -122,15 +127,12 @@ h1{
 }
 
 
-.newAct {
-
+.newAct, .editAct {
 
     position: relative;
     top: 50%;
     left: 5%;
     right: 5%;
-    background-color: rgb(245, 212, 140);
-    color: rgb(0, 0, 0);
     height: 300px;
     width: 80%;
     align-self: center;
@@ -142,6 +144,20 @@ h1{
 
 }
 
+
+.newAct{
+
+    background-color: rgb(245, 212, 140);
+    color: rgb(0, 0, 0);
+}
+
+
+.editAct{
+
+    background-color: rgb(245, 181, 239);
+    color: rgb(4, 8, 255);
+
+}
 .showUser{
 
     background-color: beige;

@@ -41,11 +41,13 @@ router.get("/showUser/:id", (req, res) => {
 
 
 
-
 /// make an account page blank - working
 router.get("/newAccount", (req, res) => {
     res.render("newAccount");
 });
+
+
+
 
 // make new account redirect to user list page after create account- need to fix
 
@@ -53,7 +55,7 @@ router.post("/newAccount", (req, res) => {
   Users.create(req.body).then(newuser => {
     console.log(req.body);
     console.log(newuser);
-    res.redirect("/users")
+    res.redirect("/users/users")
   })
   .catch(err => console.error(err));
 });
@@ -62,13 +64,32 @@ router.put("/newAccount", (req, res) => {
 Users.create(req.body).then(newuser => {
   console.log(req.body);
   console.log(newuser);
-  res.redirect("/users")
+  res.redirect("/users/users")
 })
 .catch(err => console.error(err));
 });
 
 
-///// edit pge blank - working
+router.post("/", (req, res) => {
+  Users.create(req.body).then(newuser => {
+    console.log(req.body);
+    console.log(newuser);
+    res.redirect("/users/users")
+  })
+  .catch(err => console.error(err));
+});
+
+router.put("/", (req, res) => {
+Users.create(req.body).then(newuser => {
+  console.log(req.body);
+  console.log(newuser);
+  res.redirect("/users/users")
+})
+.catch(err => console.error(err));
+});
+
+
+///// edit page blank - working
 
 router.get("/edit", (req, res) => {
     res.render("editUser");
@@ -85,11 +106,7 @@ router.get("/edit/:id", (req, res) => {
       .catch(err => console.error(err));
 });
 
-
-
-
-
- /// make an edit work - need to fix
+ /// make an edit work - working
  
  router.put("/:id", (req, res) => {
     Users.findOneAndUpdate({ _id: req.params.id }, req.body, {
