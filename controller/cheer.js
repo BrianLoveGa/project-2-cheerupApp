@@ -20,7 +20,7 @@ router.get('/', (req, res) =>{
 
 
 
-/// to make a new one
+/// to make a new one not wokring
 
 router.put("/", (req, res) => {
   CheerUps.create(req.body).then(cheers => {
@@ -57,6 +57,12 @@ router.post("/new", (req,res)=>{
 );
 });
 
+///   end of prob area
+
+
+
+
+
 
 /// chain with app . route from https://expressjs.com/en/guide/routing.html
 
@@ -74,12 +80,14 @@ router.route("/new")
 
 ///// end of new cheer route
 
-// show cheer blank
+
+// show cheer blank page - working
 router.get("/showCheer", (req, res) => {
   res.render("showCheer");
 });
 
-// show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  
+
+// show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page - working
 
 router.get("/showCheer/:id", (req, res) => {
   console.log(req.params);
@@ -89,8 +97,6 @@ router.get("/showCheer/:id", (req, res) => {
     })
     .catch(err => console.error(err));
 });
-
-
 
 
 
@@ -114,7 +120,7 @@ router.get("/edit/:id", (req, res) => {
 });
 
 
-/// make an edit work need to fix
+/// make an edit work - working - minus background color choice
 
   router.put("/:id", (req, res) => {
     CheerUps.findOneAndUpdate({ _id: req.params.id }, req.body, {
@@ -134,6 +140,6 @@ router.delete("/:id", (req, res) => {
 });  
 
 
-/// ⇡ end of line ⇪ all people routes must be ⇑ above here ⇧
 
+/// ⇡ end of line ⇪ all people routes must be ⇑ above here ⇧
 module.exports = router;

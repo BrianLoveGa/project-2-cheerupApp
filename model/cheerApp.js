@@ -11,5 +11,5 @@ const CheerUpsSchema = new mongoose.Schema({
 });
 
 const Cheers = mongoose.model("cheerups", CheerUpsSchema);
-
+/// send it out
 module.exports = Cheers;

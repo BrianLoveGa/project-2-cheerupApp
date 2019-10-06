@@ -7,7 +7,7 @@ const router = express.Router();
 const Users = require("../model/userApp");
 
 
-/// list all users - working
+/// list all users - working ...
 
 router.get('/users', (req, res) =>{
     Users.find({})
@@ -88,12 +88,20 @@ Users.create(req.body).then(newuser => {
 .catch(err => console.error(err));
 });
 
+//// end of problem area
+
+
 
 ///// edit page blank - working
 
 router.get("/edit", (req, res) => {
     res.render("editUser");
 });  
+
+
+
+
+
 
 // edit by id pass thru params - working from show user page
 
@@ -106,6 +114,11 @@ router.get("/edit/:id", (req, res) => {
       .catch(err => console.error(err));
 });
 
+
+
+
+
+
  /// make an edit work - working
  
  router.put("/:id", (req, res) => {
@@ -115,6 +128,9 @@ router.get("/edit/:id", (req, res) => {
       res.redirect('/users/users');
     });
   });
+
+
+
 
 
 /// delete it go to home page - working
@@ -127,6 +143,7 @@ router.delete("/:id", (req, res) => {
 
 
 
-/// ⇡ end of line ⇪ all people routes must be ⇑ above here ⇧
 
+
+/// ⇡ end of line ⇪ all people routes must be ⇑ above here ⇧
 module.exports = router;
