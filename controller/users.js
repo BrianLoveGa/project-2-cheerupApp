@@ -7,7 +7,7 @@ const router = express.Router();
 const Users = require("../model/userApp");
 
 
-/// list all users - need it for now and testing  but don't want to show it - will cross that bridge later
+/// list all users - working
 
 router.get('/users', (req, res) =>{
     Users.find({})
@@ -18,68 +18,76 @@ router.get('/users', (req, res) =>{
 });
 
 
-/// login page route
+/// login page route - working
 router.get("/login" , (req, res) => {
     res.render("login");
 });
 
 
 
-/// make an account page
+// show user page blank - working
+router.get("/showUser", (req, res) => {
+  res.render("showUser");
+});  
+
+
+// show one user by user id- working
+router.get("/showUser/:id", (req, res) => {
+  Users.findOne({_id: req.params.id}).then(user => {
+    res.render("showUser", user);
+  })
+  .catch(err => console.error(err));
+});
+
+
+
+
+/// make an account page blank - working
 router.get("/newAccount", (req, res) => {
     res.render("newAccount");
-  });
+});
 
+// make new account redirect to user list page after create account- need to fix
+
+router.post("/newAccount", (req, res) => {
+  Users.create(req.body).then(newuser => {
+    console.log(req.body);
+    console.log(newuser);
+    res.redirect("/users")
+  })
+  .catch(err => console.error(err));
+});
+
+router.put("/newAccount", (req, res) => {
+Users.create(req.body).then(newuser => {
+  console.log(req.body);
+  console.log(newuser);
+  res.redirect("/users")
+})
+.catch(err => console.error(err));
+});
+
+
+///// edit pge blank - working
 
 router.get("/edit", (req, res) => {
     res.render("editUser");
-  });  
+});  
 
-  router.get("/edit/:id", (req, res) => {
+// edit by id pass thru params - working from show user page
+
+router.get("/edit/:id", (req, res) => {
     console.log(req.params);
       Users.findOne({_id: req.params.id}).then(user => {
         console.log(user);
         res.render("editUser", user);
       })
       .catch(err => console.error(err));
-  });
-
-
-
-
-
-router.get("/showUser", (req, res) => {
-    res.render("showUser");
-});  
-
-
-
-// show one user
-router.get("/showUser/:id", (req, res) => {
-    Users.findOne({_id: req.params.id}).then(user => {
-      res.render("showUser", user);
-    })
-    .catch(err => console.error(err));
-  });
-
-
-
-
-// make new account redirect to login page after - need to fix
-
-router.post("/newAccount", (req, res) => {
-    Users.create(req.body).then(newuser => {
-      res.redirect("/login");
-    });
 });
 
 
-  // edit account page
-router.get("/:id", (req, res) => {
-    Users.findById({ _id: req.params.id }).then(user => {
-      res.render("newAccount", user);
-    });
-});
+
+
 
  /// make an edit work - need to fix
  
@@ -87,7 +95,7 @@ router.get("/:id", (req, res) => {
     Users.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true
     }).then(person => {
-      res.redirect(`/users/${person.id}`);
+      res.redirect('/users/users');
     });
   });
 
