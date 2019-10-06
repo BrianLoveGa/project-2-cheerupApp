@@ -19,6 +19,11 @@ router.get('/', (req, res) =>{
 });
 
 
+router.get('/newCheer', (req, res) => {
+  res.render("newCheer");
+});
+
+
 
 /// to make a new one exist  ---  !!  not working
 
@@ -28,7 +33,7 @@ router.get('/', (req, res) =>{
 //   });
 // });
 
-// router.put("/new", (req,res)=>{
+// router.put("/newCheer", (req,res)=>{
 //   CheerUps.create(req.body)
 //   console.log(req.body)
 //   .then(cheer =>{
@@ -39,22 +44,22 @@ router.get('/', (req, res) =>{
 // );
 // });
 
-// router.post("/", (req, res) => {
-//   CheerUps.create(req.body).then(cheers => {
-//     res.redirect("/cheerUps");
-//   });
-// });
+router.post("/", (req, res) => {
+  CheerUps.create(req.body).then(cheers => {
+    res.redirect("/cheerUps");
+  });
+});
 
-// router.post("/new", (req,res)=>{
-//   CheerUps.create(req.body)
-//   console.log(req.body)
-//   .then(cheer =>{
-//     console.log(cheer)
-//     res.redirect("/cheerUps");
-//   })
-//   .catch(err => console.error(err)
-// );
-// });
+router.post("/newCheer", (req,res)=>{
+  CheerUps.create(req.body)
+  console.log(req.body)
+  .then(cheer =>{
+    console.log(cheer)
+    res.redirect("/cheerUps");
+  })
+  .catch(err => console.error(err)
+);
+});
 
 ///   end of prob area
 
@@ -66,18 +71,18 @@ router.get('/', (req, res) =>{
 /// chain with app . route from https://expressjs.com/en/guide/routing.html
 
 /// make a new cheerup page and post it
-router.route("/newCheer")
-  .get(function (req, res) {
-    res.render("newCheer")
-  })
-         // need to fix
-.post(function (req, res){
-    CheerUps.create(req.body)
-    .then(newCheer => {
-      res.redirect("/cheerUps", newCheer)
-  })
-  .catch(err => console.error(err))
-});
+// router.route("/newCheer")
+//   .get(function (req, res) {
+//     res.render("newCheer")
+//   })
+//          // need to fix
+// .post(function (req, res){
+//     CheerUps.create(req.body)
+//     .then(newCheer => {
+//       res.redirect("/cheerUps", newCheer)
+//   })
+//   .catch(err => console.error(err))
+// });
 
 ///// end of new cheer route
 
