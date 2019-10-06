@@ -19,18 +19,43 @@ router.get('/', (req, res) =>{
 });
 
 
-// /// make a cheerup page
-// router.get("/new", (req, res) => {
-//     res.render("newCheer");
-//   });
 
-// /// when new cheer-up made put on home page then redirect to home page
-// router.post("/", (req, res) => {
-//   CheerUps.create(req.body).then(cheers => {
-//     res.redirect("/");
-//   });
-// });
+/// to make a new one
 
+router.put("/", (req, res) => {
+  CheerUps.create(req.body).then(cheers => {
+    res.redirect("/cheerUps");
+  });
+});
+
+router.put("/new", (req,res)=>{
+  CheerUps.create(req.body)
+  console.log(req.body)
+  .then(cheer =>{
+    console.log(cheer)
+    res.redirect("/cheerUps");
+  })
+  .catch(err => console.error(err)
+);
+});
+
+
+router.post("/", (req, res) => {
+  CheerUps.create(req.body).then(cheers => {
+    res.redirect("/cheerUps");
+  });
+});
+
+router.post("/new", (req,res)=>{
+  CheerUps.create(req.body)
+  console.log(req.body)
+  .then(cheer =>{
+    console.log(cheer)
+    res.redirect("/cheerUps");
+  })
+  .catch(err => console.error(err)
+);
+});
 
 
 /// chain with app . route from https://expressjs.com/en/guide/routing.html
@@ -46,24 +71,29 @@ router.route("/new")
 //       res.redirect("/");
 //   })
 // })
-             /// working
-.delete(function (req, res){
-  CheerUps.findByIdAndRemove(req.params.id).then(() => {
-    res.redirect("/");
-  })
-});
+
 ///// end of new cheer route
 
-router.post("/new", (req,res)=>{
-  CheerUps.create(req.body)
-  console.log(req.body)
-  .then(cheer =>{
-    console.log(cheer)
-    res.redirect("/cheerUps");
-  })
-  .catch(err => console.error(err)
-);
+// show cheer blank
+router.get("/showCheer", (req, res) => {
+  res.render("showCheer");
 });
+
+// show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  
+
+router.get("/showCheer/:id", (req, res) => {
+  console.log(req.params);
+    CheerUps.findOne({_id: req.params.id}).then(cheer => {
+      console.log(cheer);
+      res.render("showCheer", cheer);
+    })
+    .catch(err => console.error(err));
+});
+
+
+
+
+
 
 /// edit page blank exists - working
 
@@ -72,9 +102,8 @@ router.get("/edit", (req, res) => {
 });
 
 
-// see a cheerup on edit page by id - working
-// show one cheerup when click on its title on edit page button at bottom  edit a cheer Up page  
 
+// see a cheerup on edit page by id - working
 router.get("/edit/:id", (req, res) => {
   console.log(req.params);
     CheerUps.findOne({_id: req.params.id}).then(cheer => {
