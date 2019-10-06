@@ -7,7 +7,7 @@
     </section>
     <section class="secondNC">
     <label for="cheerup">Cheer Up Quip</label>
-    <input type="text" name="cheerup" value="{{cheerup}}"maxlength="141" size="142">
+    <input type="text" name="cheerup" value='{{cheerup}}' maxlength="141" size="142">
     </section>
     <section class="thirdNC">
     <label for "creator">Creator of this Cheer Up</label> 
@@ -28,7 +28,3 @@
 </form>
 </div>
 
-<h3> Click the delete button below to permanently remove a Cheer Up .</h3>
-<form action="/{{id}}?_method=delete" method="post">
-    <input class="buttondelete" type="submit" value="Delete">
-</form>

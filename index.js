@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require('handlebars')
 const cors = require('cors');
 const parser = require("body-parser");
-const methMan = require('method-override');
+const _= require('method-override');
 
 // find controllers
 const userController = require("./controller/users");
@@ -19,7 +19,7 @@ app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 
 // to use method override
-app.use(methMan("_method"));
+app.use(_("_method"));
 
 
 // use hbs for views
