@@ -20,42 +20,41 @@ router.get('/', (req, res) =>{
 
 
 
-/// to make a new one not wokring
+/// to make a new one exist  ---  !!  not working
 
-router.put("/", (req, res) => {
-  CheerUps.create(req.body).then(cheers => {
-    res.redirect("/cheerUps");
-  });
-});
+// router.put("/", (req, res) => {
+//   CheerUps.create(req.body).then(cheers => {
+//     res.redirect("/cheerUps");
+//   });
+// });
 
-router.put("/new", (req,res)=>{
-  CheerUps.create(req.body)
-  console.log(req.body)
-  .then(cheer =>{
-    console.log(cheer)
-    res.redirect("/cheerUps");
-  })
-  .catch(err => console.error(err)
-);
-});
+// router.put("/new", (req,res)=>{
+//   CheerUps.create(req.body)
+//   console.log(req.body)
+//   .then(cheer =>{
+//     console.log(cheer)
+//     res.redirect("/cheerUps");
+//   })
+//   .catch(err => console.error(err)
+// );
+// });
 
+// router.post("/", (req, res) => {
+//   CheerUps.create(req.body).then(cheers => {
+//     res.redirect("/cheerUps");
+//   });
+// });
 
-router.post("/", (req, res) => {
-  CheerUps.create(req.body).then(cheers => {
-    res.redirect("/cheerUps");
-  });
-});
-
-router.post("/new", (req,res)=>{
-  CheerUps.create(req.body)
-  console.log(req.body)
-  .then(cheer =>{
-    console.log(cheer)
-    res.redirect("/cheerUps");
-  })
-  .catch(err => console.error(err)
-);
-});
+// router.post("/new", (req,res)=>{
+//   CheerUps.create(req.body)
+//   console.log(req.body)
+//   .then(cheer =>{
+//     console.log(cheer)
+//     res.redirect("/cheerUps");
+//   })
+//   .catch(err => console.error(err)
+// );
+// });
 
 ///   end of prob area
 
@@ -67,16 +66,18 @@ router.post("/new", (req,res)=>{
 /// chain with app . route from https://expressjs.com/en/guide/routing.html
 
 /// make a new cheerup page and post it
-router.route("/new")
+router.route("/newCheer")
   .get(function (req, res) {
-    res.render("newCheer");
+    res.render("newCheer")
   })
          // need to fix
-//   .post(function (req, res){
-//     CheerUps.create(req.body).then(() => {
-//       res.redirect("/");
-//   })
-// })
+.post(function (req, res){
+    CheerUps.create(req.body)
+    .then(newCheer => {
+      res.redirect("/cheerUps", newCheer)
+  })
+  .catch(err => console.error(err))
+});
 
 ///// end of new cheer route
 
