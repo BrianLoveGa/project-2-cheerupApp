@@ -4,7 +4,29 @@ const cors = require('cors');
 const parser = require("body-parser");
 const _= require('method-override');
 
+/// to add in passport
+const passport = require('passport');
+const passportConfig = require('./config/passport');
+const flash = require('connect-flash');
+const morgan = require('morgan')
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
+const bodyParser = require('body-parser')
 
+// instantiate express
+const app = express();
+
+
+app.use(morgan('dev'))
+app.use(cookieParser())
+app.use(bodyParser())
+
+app.use(session({ secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS' }));
+app.use(flash());
+
+passportConfig(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 // find controllers
@@ -12,8 +34,7 @@ const userController = require("./controller/users");
 
 const cheerController = require('./controller/cheer');
 
-// instantiate express
-const app = express();
+
 
 // to stop error message
 app.use(parser.urlencoded({ extended: true }));

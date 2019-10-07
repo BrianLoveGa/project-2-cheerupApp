@@ -1,13 +1,15 @@
+<h2> CheerUps Login Page</h2>
+
 <div class="login">
 
-    <form name="form1" action="/users/login" method="Get"></form>
-    <section class="logtop"> 
-    <label for="username">Cheer Ups User Name:</label>
-    <input type="text" name="username" value="{{username}}" maxlength="40" size="42">
-    </section>
-    <section class="logmid">
-    <label for "password">Password for Cheer Ups: </label> 
-    <input type="text" name="password" value="{{password}}" maxlength="25" size="26">
+    <form name="form1" action="/login" method="POST"></form>
+    <section>
+<label for "email">Email used to make cheer Ups account: </label> 
+    <input class="form-control" type="text" name="email" id="email" maxlength="40" size="42">
+</section>
+    <section >
+    <label for="email">Password for Cheer Ups: </label> 
+    <input class="form-control" type="password" name="password" id="password" maxlength="25" size="26">
     </section>
     <section class="logbtn">
     <input class="button" type="submit" value="Log into CheerUps">

@@ -2,6 +2,11 @@
 const express = require("express");
 const router = express.Router();
 
+/// for passport
+var bodyParser = require('body-parser')
+var methodOverride = require('method-override')
+var passport = require('passport')
+
 
 // model
 const CheerUps = require("../model/cheerApp");
