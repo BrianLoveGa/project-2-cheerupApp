@@ -4,8 +4,11 @@ const router = express.Router();
 
 
 // model
+
 const Users = require("../model/userApp");
+
 ////   just in case
+
 const CheerUps = require("../model/cheerApp");
 
 
@@ -48,7 +51,6 @@ router.get("/showUser/:id", (req, res) => {
 router.get("/newAccount", (req, res) => {
     res.render("newAccount");
 });
-
 
 
 

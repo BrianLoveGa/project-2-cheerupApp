@@ -5,6 +5,9 @@ const router = express.Router();
 
 // model
 const CheerUps = require("../model/cheerApp");
+
+// would love to have when click on "posted by" under cheer up it goes to user id b ut it reads as cheerups id no matter what I try.... hmmm. oh well - just go to user page for now. 
+
 const Users = require("../model/userApp");
 
 
@@ -32,10 +35,8 @@ router.get('/newCheer', (req, res) => {
 //   WORKING THANKS PROF ALI 
 
 router.post("/", (req, res) => {
-  
   CheerUps.create(req.body).then(cheers => {
     res.redirect("/cheerUps");
-    
   })
   .catch(err => console.error(err)
 )
