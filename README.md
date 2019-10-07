@@ -1,3 +1,8 @@
+__Welcome to my happy little app__
+*****
+
+
+
 # project-2-cheerupApp
 ******
 
@@ -20,12 +25,21 @@ An app where cheerups can be viewed by public (users)- and new ones created / ed
 
 __Silver__ 
 
-Users profiles exist (passport). Then they can up vote  the cheer ups or make new ones. Also edit and delete ones they made. 
-Can pick one of 3 colors for background of their cheerup. 
+Users profiles exist (passport). Then they can make new cheerups. Also edit and delete ones they made. 
+
+Silver and a half
+
+Let users sign in with a third-party account (Facebook & or GitHub ).
 
 __Gold__
 
-They will be shown by rank on main page .
+Let users choose one of three background colors.
+
+Users can upvote / down vote the cherups like reddit or stackoverflow or twitter
+
+
+__Platnium__ 
+Cheerups will be shown by rank on main page .
 
 Your profile shows if any of your cheerups are in top nine on main page. 
 
@@ -33,6 +47,7 @@ Have favorites - you voted for show up when you log in.
 
 Click a user to see ones they made.
 
-Let users sign in with a third-party account (Facebook & or GitHub ).
 
 *****
+
+

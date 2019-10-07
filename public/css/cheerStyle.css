@@ -8,7 +8,7 @@ body{
 .head {
     display: flex;
     flex-direction: column;
-    padding: 0 2%;
+    
 }
 
 h1{
