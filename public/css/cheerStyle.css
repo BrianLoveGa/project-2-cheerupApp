@@ -141,7 +141,21 @@ h2, h3, a {
     font-family: 'Mansalva', cursive, serif;
 }
 
+.showCheer {
+    background-color: pink;
+    
+}
 
+.showCheer a {
+
+    background-color: blue;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    margin-left: 45%;
+   
+    flex-wrap: nowrap;
+}
 
 .newCheerForm, .editCheer {
 
@@ -157,7 +171,8 @@ h2, h3, a {
 }
 
 .editCheer {
-    background-color: rgb(160, 124, 7);
+    background-color: rgb(243, 159, 232);
+    
 }
 
 .colorbuttons {
@@ -170,7 +185,7 @@ h2, h3, a {
 .fourthNc  {
     margin: 5% 3%;
     padding: 25px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
 }
 
 

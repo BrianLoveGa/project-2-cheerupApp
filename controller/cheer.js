@@ -5,7 +5,7 @@ const router = express.Router();
 
 // model
 const CheerUps = require("../model/cheerApp");
-
+const Users = require("../model/userApp");
 
 
 /// list all cheer ups - home page - working
@@ -13,7 +13,11 @@ const CheerUps = require("../model/cheerApp");
 router.get('/', (req, res) =>{
     CheerUps.find({})
     .then(cheers => {
-        res.render("index", {cheers});
+      res.render("index", {cheers});
+  })  
+    Users.find({})
+    .then(users => {
+        res.render("index", {users});
     })    
     .catch(err => console.error(err));
 });
@@ -46,7 +50,7 @@ router.get('/newCheer', (req, res) => {
 
 router.post("/", (req, res) => {
   CheerUps.create(req.body).then(cheers => {
-    res.redirect("/cheerUps");
+    res.redirect("/");
   });
 });
 

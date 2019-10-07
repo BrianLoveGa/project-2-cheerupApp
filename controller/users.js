@@ -5,7 +5,8 @@ const router = express.Router();
 
 // model
 const Users = require("../model/userApp");
-
+////   just in case
+const CheerUps = require("../model/cheerApp");
 
 /// list all users - working ...
 
@@ -51,6 +52,16 @@ router.get("/newAccount", (req, res) => {
 
 // make new account redirect to user list page after create account- need to fix
 
+// router.post("/", (req, res) => {
+//   Users.create(req.body).then(newuser => {
+//     console.log(req.body);
+//     console.log(newuser);
+//     res.redirect("/users/users")
+//   })
+//   .catch(err => console.error(err));
+// });
+
+
 router.post("/newAccount", (req, res) => {
   Users.create(req.body).then(newuser => {
     console.log(req.body);
@@ -60,33 +71,26 @@ router.post("/newAccount", (req, res) => {
   .catch(err => console.error(err));
 });
 
-router.put("/newAccount", (req, res) => {
-Users.create(req.body).then(newuser => {
-  console.log(req.body);
-  console.log(newuser);
-  res.redirect("/users/users")
-})
-.catch(err => console.error(err));
-});
+// router.put("/", (req, res) => {
+// Users.create(req.body).then(newuser => {
+//   console.log(req.body);
+//   console.log(newuser);
+//   res.redirect("/users/users")
+// })
+// .catch(err => console.error(err));
+// });
+
+// router.put("/newAccount", (req, res) => {
+// Users.create(req.body).then(newuser => {
+//   console.log(req.body);
+//   console.log(newuser);
+//   res.redirect("/users/users")
+// })
+// .catch(err => console.error(err));
+// });
 
 
-router.post("/", (req, res) => {
-  Users.create(req.body).then(newuser => {
-    console.log(req.body);
-    console.log(newuser);
-    res.redirect("/users/users")
-  })
-  .catch(err => console.error(err));
-});
 
-router.put("/", (req, res) => {
-Users.create(req.body).then(newuser => {
-  console.log(req.body);
-  console.log(newuser);
-  res.redirect("/users/users")
-})
-.catch(err => console.error(err));
-});
 
 //// end of problem area
 
@@ -133,11 +137,11 @@ router.get("/edit/:id", (req, res) => {
 
 
 
-/// delete it go to home page - working
+/// delete it go to user page - working
 
 router.delete("/:id", (req, res) => {
     Users.findByIdAndRemove(req.params.id).then(() => {
-      res.redirect("/cheerUps");
+      res.redirect("/users/users");
     });
   });  
 
