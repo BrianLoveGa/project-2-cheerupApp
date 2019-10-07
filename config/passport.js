@@ -4,7 +4,7 @@ var passport=require('passport');
 var LocalStrategy=require('passport-local').Strategy;
 
 var User=require('../model/userApp');
-
+var bcrypt   = require('bcrypt-nodejs');
 module.exports = function(passport) {
 
   // To use the session with passport, we need to create two new methods in config/passport.js

@@ -33,7 +33,7 @@ router.get("/login" , (req, res) => {
 
 router.post('/login', (req, res) => {
   var loginProperty = passport.authenticate('local-login', {
-    successRedirect : '/',
+    successRedirect : '/cheerUps',
     failureRedirect : '/login',
     failureFlash : true
   });
@@ -43,6 +43,34 @@ router.post('/login', (req, res) => {
 
 
 
+
+
+
+
+
+/// make an account page 
+router.get("/signup", (req, res) => {
+    res.render("newAccount", { message: req.flash('signupMessage') } );
+});
+
+
+router.post('/', (req, res) => {
+  var signupStrategy = passport.authenticate('local-signup', {
+    successRedirect : '/cheerUps',
+    failureRedirect : '/signup',
+    failureFlash : true
+  });
+
+  return signupStrategy(req, res);
+})
+
+
+
+
+
+
+
+//// old routes from before passport - will likely need to tweek once its working...
 
 // show user page blank 
 router.get("/showUser", (req, res) => {
@@ -60,29 +88,7 @@ router.get("/showUser/:id", (req, res) => {
 
 
 
-/// make an account page 
-router.get("/signup", (req, res) => {
-    res.render("newAccount", { message: req.flash('signupMessage') } );
-});
-
-
-router.post('/signup', (req, res) => {
-  var signupStrategy = passport.authenticate('local-signup', {
-    successRedirect : '/',
-    failureRedirect : '/signup',
-    failureFlash : true
-  });
-
-  return signupStrategy(req, res);
-})
-
-
-
-
-
-
-
-///// edit page blank - working
+///// edit page blank 
 
 router.get("/edit", (req, res) => {
     res.render("editUser");
