@@ -40,7 +40,10 @@ app.use("/cheerups", cheerController);
 app.use("/users", userController);
 
 
-
+// redirect any requests to the main cheerUps homepage 
+app.get("/", (req, res) => {
+  res.redirect("/cheerUps");
+});
 
 
 /// connection mon
