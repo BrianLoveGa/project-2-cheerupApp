@@ -133,11 +133,11 @@ h2, h3, a {
     
     font-size: 30px;
     background-color: rgb(247, 242, 109);
-    width: 250px;
-    height: 300px;
+    width: 240px;
+    height: 280px;
     text-align: center;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Mansalva', cursive, serif;
 }
 

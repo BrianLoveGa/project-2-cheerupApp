@@ -8,6 +8,8 @@ const Users = require("../model/userApp");
 ////   just in case
 const CheerUps = require("../model/cheerApp");
 
+
+
 /// list all users - working ...
 
 router.get('/users', (req, res) =>{
@@ -50,49 +52,16 @@ router.get("/newAccount", (req, res) => {
 
 
 
-// make new account redirect to user list page after create account- need to fix
+// make new account 
+// redirect to user list page after create account
+//   WORKING THANKS PROF ALI 
 
-// router.post("/", (req, res) => {
-//   Users.create(req.body).then(newuser => {
-//     console.log(req.body);
-//     console.log(newuser);
-//     res.redirect("/users/users")
-//   })
-//   .catch(err => console.error(err));
-// });
-
-
-router.post("/newAccount", (req, res) => {
+router.post("/", (req, res) => {
   Users.create(req.body).then(newuser => {
-    console.log(req.body);
-    console.log(newuser);
     res.redirect("/users/users")
   })
   .catch(err => console.error(err));
 });
-
-// router.put("/", (req, res) => {
-// Users.create(req.body).then(newuser => {
-//   console.log(req.body);
-//   console.log(newuser);
-//   res.redirect("/users/users")
-// })
-// .catch(err => console.error(err));
-// });
-
-// router.put("/newAccount", (req, res) => {
-// Users.create(req.body).then(newuser => {
-//   console.log(req.body);
-//   console.log(newuser);
-//   res.redirect("/users/users")
-// })
-// .catch(err => console.error(err));
-// });
-
-
-
-
-//// end of problem area
 
 
 
@@ -104,22 +73,14 @@ router.get("/edit", (req, res) => {
 
 
 
-
-
-
 // edit by id pass thru params - working from show user page
 
 router.get("/edit/:id", (req, res) => {
-    console.log(req.params);
       Users.findOne({_id: req.params.id}).then(user => {
-        console.log(user);
         res.render("editUser", user);
       })
       .catch(err => console.error(err));
 });
-
-
-
 
 
 
@@ -135,8 +96,6 @@ router.get("/edit/:id", (req, res) => {
 
 
 
-
-
 /// delete it go to user page - working
 
 router.delete("/:id", (req, res) => {
@@ -144,9 +103,6 @@ router.delete("/:id", (req, res) => {
       res.redirect("/users/users");
     });
   });  
-
-
-
 
 
 /// ⇡ end of line ⇪ all people routes must be ⇑ above here ⇧
