@@ -83,7 +83,7 @@ __Find it__
 
 Source = https://github.com/BrianLoveGa/project-2-cheerupApp
 
-Deployed on the interwebs at = 
+Deployed on the interwebs at = https://bl-cheer-ups-app.herokuapp.com/cheerUps
 
 
 __Contribute__
