@@ -162,3 +162,84 @@ h1{
 
     background-color: beige;
 }
+
+
+/* still a little wonky if at less than 300px wide - but dang thats small - get a better phone already */
+
+@media only screen and (max-width: 419px) {
+    h1 {
+        font-family: 'Happy Monkey', cursive, sans-serif;
+        font-size:30px;
+        text-align: center;
+        color:black;
+        }
+    .head {
+        display: flex;
+        flex-direction: column; 
+        }
+    .top {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin: 3% 0;
+        padding: 3px;
+        border: 3px solid salmon;
+        border-radius: 5px;
+        }
+    .top a{
+        -webkit-flex: 1 auto;
+        flex: 1 auto;
+        flex-shrink: 2;
+        text-decoration: none;
+        background-color: blue;
+        color:  rgb(172, 172, 245);
+        font-size: 20px;
+        justify-content: flex-start;
+        text-align: center;
+        }
+    .top a:hover{
+        -webkit-flex: 1 auto;
+        flex: 1 auto;
+        text-decoration: none;
+        background-color:rgb(54, 54, 248);
+        color:white;
+        font-size: 25px;
+        justify-content: flex-start;
+        border-radius: 5px;
+        text-align: center;
+        }
+    .second{
+        flex-wrap: nowrap;
+        flex-shrink: 2;
+        position: relative;
+        background-color: green;
+        margin: 2% 0;
+        font-size: 20px;
+        text-align: center;
+        align-self: flex-end;
+        border: 3px yellowgreen solid;
+        border-radius: 8px;
+        padding: 1px;
+        }
+    .second:hover {
+        font-size: 22px;
+        background-color: yellowgreen;
+        border: 5px black solid;
+        border-radius: 13px;
+        padding: 4px;
+        }
+    .second a {
+        text-decoration: none;
+        background-color: antiquewhite;
+        color: crimson;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 1px;
+        }
+    .cheerup{
+        color:black
+        }
+}
