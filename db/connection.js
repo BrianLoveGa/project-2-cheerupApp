@@ -1,4 +1,12 @@
 const mongoose = require("mongoose");
+mongoose.Promise = Promise;
+
+let mongoURI = "";
+if (process.env.NODE_ENV === "production") {
+  mongoURI = process.env.DB_URL;
+} else {
+  mongoURI = "mongodb://localhost/cheerups";
+}
 
 /// from mongoose .js "To fix all deprecation warnings, follow the below steps:"
 
@@ -8,12 +16,21 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
 
+
+mongoose
+  .connect(mongoURI)
+  .then(instance =>
+    console.log(`Connected to db: ${instance.connections[0].name}`)
+  )
+  .catch(error => console.log("Connection failed!", error));
+
+
 /// make it connected
-mongoose.connect("mongodb://localhost/cheerups",
-() => {
-  console.log("Now connected!!! 🚀 Warp Speed Engage !!!");
-}
-);
+// mongoose.connect("mongodb://localhost/cheerups",
+// () => {
+//   console.log("Now connected!!! 🚀 Warp Speed Engage !!!");
+// }
+// );
 
 
 
