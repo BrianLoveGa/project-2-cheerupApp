@@ -130,7 +130,7 @@ Huge thanks to Ma Familia - My favorite testing group!
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.49.29%20PM.png " It works - my dad made a post")
 
 
-My dad was able to acces and post a Cheer Up !
+My Dad was able to acces and post a Cheer Up !
 
 <!-- my Mom and Sis made a post too!  -->
 
@@ -138,7 +138,7 @@ My dad was able to acces and post a Cheer Up !
 
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.12%20PM.png "It really works - my mom and sis made a post")
 
-My Mom and Sis made posts too - I know my mom only has her phone for internet so it at least kinda renders ok on small screens.
+My Mom and Sis made posts too - I know my Mom only has her phone for internet so it at least mostly renders ok on small screens.
 
 <!-- my Sis (darocklobsta) & Girlfriend (Hotmom92) were able to make accounts! Whoo-Hoo!  -->
 
@@ -155,8 +155,8 @@ __More Coming Soon__
 
 I Promise !   ️
 
-Until then my peoples ✌ ☮ & 💟  (Peace and Love)!
+Until then my peoples ✌ ☮ & 💟 💗 (2 x Peace and 2 x Love)!
 
-or 
+or just ... 
 
 🖖  🅛🅘🅥🅔 🅛🅞🅝🅖 🅐🅝🅓 🅟🅡🅞🅢🅟🅔🅡  🖖 
