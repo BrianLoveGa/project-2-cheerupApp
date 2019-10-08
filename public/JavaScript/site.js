@@ -1,36 +1,36 @@
-console.log("TESTING CHECK CHECK");
+// console.log("TESTING CHECK CHECK");
 
-// express
-const express = require("express");
-const router = express.Router();
-
-
-// model
-const CheerUps = require("../model/cheerApp");
-
-const cheerController = require('./controller/cheer');
-
-const app = express();
-
-// use controller
-app.use("/cheerups", cheerController);
-
-// cheer up vote count simple style
+// // express
+// const express = require("express");
+// const router = express.Router();
 
 
-function upVoteCheer () {
-    let value = parseInt(document.querySelectorAll(this.title).value, 10);
-    value = isNaN(value) ? 0 : value; 
-    value ++;
-    document.getElementsByClassName(this.title).value = value;
-};
+// // model
+// const CheerUps = require("../model/cheerApp");
+
+// const cheerController = require('./controller/cheer');
+
+// const app = express();
+
+// // use controller
+// app.use("/cheerups", cheerController);
+
+// // cheer up vote count simple style
 
 
-document.querySelectorAll("upVoteBtn") = buttons;
+// function upVoteCheer () {
+//     let value = parseInt(document.querySelectorAll(this.title).value, 10);
+//     value = isNaN(value) ? 0 : value; 
+//     value ++;
+//     document.getElementsByClassName(this.title).value = value;
+// };
 
-/// some sort of loop for buttons?
+
+// let buttons = document.querySelectorAll("upVoteBtn");
+
+// /// some sort of loop for buttons?
 
 
-buttons.addEventListener("click", upVoteCheer());
+// buttons.addEventListener("click", upVoteCheer());
 
 
