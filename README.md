@@ -1,4 +1,4 @@
-__Welcome to my happy little app__
+# Welcome to my happy little app !  (-:
 *****
 <!-- Picture below of home page of cheerups app -->
 
@@ -11,8 +11,10 @@ An app that will allow people to create and share "Cheer Ups" - happy little not
 
 ******
 
-Cheerups
+__Cheerups__
+
 The world can be a depressing place. Your task is to create an app that will allow people to create and share "Cheer Ups" - happy little quips to brighten other peoples' days. Cheer Ups will be small - limited to 141 characters.
+
 *Members will be able to promote Cheer Ups that they like and maybe even boost the reputation of the Cheer Upper.
 *bonus
 
@@ -41,7 +43,7 @@ Users can upvote / down vote the cherr ups like reddit or stackoverflow.
 
 *bonus
 
-__Platnium__ 
+__Platinum__
 
 Cheerups will be shown by rank on main page.
 
@@ -61,7 +63,7 @@ Full CRUD (create read update delete) / RESTful routes for users and cheer ups.
 
 Css on all pages. but the view from local host and the view on live chrome page is a little different - also the green second header bar floats wierd in Firefox ... My Mom and Girlfriend were able to access it and see it on their phones. Still needs more but want to add more features before style at this point.
 
-Login page just for decoration until can get Passport working.
+Login page just for decoration until I can get Passport working.
 
 *****
 
@@ -78,7 +80,7 @@ Deployment via Heroku site With Atlas: Mongo  DB cluster.
 
 *****
 
-__Offically Deployed__
+# Offically Deployed
 
 <!-- Picture of heroku dashboard of build sucess and deployed cheerups app -->
 
@@ -86,11 +88,12 @@ __Offically Deployed__
 
 
 
-__coming soon__ 
+__Coming Soon__ 
 
 ```
 
 Passport for user authenticity and accounts.
+
 Moving up through the goals.  
 
 ```
@@ -103,7 +106,7 @@ Deployed on the interwebs at = https://bl-cheer-ups-app.herokuapp.com/cheerUps
 
 __Contribute__
 
-Find the master above.... or
+Find the master above at source link .... or
 
 
 Please use the with-passport branch if you can help with that feature.
@@ -120,7 +123,7 @@ THANKS!
 
 __My testers__
 
-Huge thanks to Ma Familia - my favorite testing group!
+Huge thanks to Ma Familia - My favorite testing group!
 
 <!-- my Dad made a new cheerup and I saw it -->
 
@@ -135,14 +138,14 @@ My dad was able to acces and post a Cheer Up !
 
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.12%20PM.png "It really works - my mom and sis made a post")
 
-My Mom and Sis made posts too - Iknow my mom only has her phone so it at least kinda renders ok on small screens.
+My Mom and Sis made posts too - I know my mom only has her phone for internet so it at least kinda renders ok on small screens.
 
 <!-- my Sis (darocklobsta) & Girlfriend (Hotmom92) were able to make accounts! Whoo-Hoo!  -->
 
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.35%20PM.png "Kinda cool - accounts can be made - although it will be cooler when I can get actual passport auth to work so the login does something")
 
-My Sis (Heather nicole) & Girlfriend (Michelle Fryer) were able to make accounts! Whoo-Hoo! 
-Although it will be much cooler when I can actually get passport auth  working so the login does something.
+My Sis (Heather Nicole) & Girlfriend (Michelle Fryer) were able to make accounts! Whoo-Hoo! 
+Although it will be much cooler when I can actually get passport auth  working so the login does something and I can keep any meanies away.
 
 
 *****
@@ -150,7 +153,9 @@ Although it will be much cooler when I can actually get passport auth  working s
 Stay Tuned Folks .... 
 __More Coming Soon__
 
-I Promise !   ️Untill then  ✌ ☮ & 💟  (peace and love)!
+I Promise !   ️
+
+Until then my peoples ✌ ☮ & 💟  (Peace and Love)!
 
 or 
 
