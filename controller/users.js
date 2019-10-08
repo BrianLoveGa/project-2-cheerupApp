@@ -15,10 +15,12 @@ const User = require("../model/userApp");
 
 
 
-/// make an account page 
+/// make an account page - page shows up so working ....
 router.get("/signup", (req, res) => {
   res.render("newAccount", { message: req.flash('signupMessage') });
 });
+
+// same exact code as in the tutorial and solution code but is not working  :-( ERROR -  Cannot POST /signup  --}}
 
 
 router.post('/signup', (req, res) => {
@@ -33,10 +35,13 @@ return signupStrategy(req, res);
 
 
 
-/// login page 
+/// login page - page shows up so working ....
 router.get("/login" , (req, res) => {
   res.render("login", { message: req.flash('loginMessage')});
 });
+
+
+// same exact code as in the tutorial and solution code cannot test though since make account not working so no users to login sice user seed changed to new schema still not populating... 
 
 router.post('/login', (req, res) => {
 var loginProperty = passport.authenticate('local-login', {
@@ -48,7 +53,7 @@ var loginProperty = passport.authenticate('local-login', {
 return loginProperty(req, res);
 });
 
-
+// un-tested since create account does not Work ...
 
 // GET /logout
 router.get('/logout', (req, res) => {

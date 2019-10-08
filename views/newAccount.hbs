@@ -6,8 +6,10 @@
 
 
 <div class="newAct">
-   
-<form name="formNwUsr" action="/" method="POST">
+
+   {{!-- to get my post working used plain slash here on non-passport version after action= ... but the tutorial and solution code say use /signup when using passport ... have tried it both ways and neither is working  :-(  --}}
+
+<form name="formNwUsr" action="/signup" method="POST">
     <section>
 <label for "email">Email used to make cheer Ups account:</label> 
     <input class="form-control" type="text" name="email" id="email" maxlength="40" size="42">
