@@ -70,6 +70,15 @@ __Technologies Used__
 ```
 <HTML> .CSS { background-color: blue;} Javascript, Repository on Git hub,  Node JS - runtime, Express js -framework, MongoDB - node.js Driver, Mongoose ODM - object modeling, Handlebars (hbs) - templates, Cross-Origin Resource Sharing (CORS) - middleware, Body-Parser - middleware, & Method-Override - middleware. Deployment via Heroku site.
 ```
+*****
+__Offically Deployed__
+
+<!-- Picture below of home page of cheerups app -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-07%20at%2012.22.05%20PM%20copy.png "Screen shot from the Cheer Ups app prototype")
+
+
+
 
 __coming soon__ 
 
