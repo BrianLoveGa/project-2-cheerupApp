@@ -7,13 +7,14 @@ __Welcome to my happy little app__
 # project-2-cheerupApp
 ******
 
-An app that will allow people to create and share "cheerups" - happy little notes to brighten other peoples' days.
+An app that will allow people to create and share "Cheer Ups" - happy little notes to brighten other peoples' days.
 
 ******
 
 Cheerups
-The world can be a depressing place. Your task is to create an app that will allow people to create and share "cheerups" - happy little quips to brighten other peoples' days. Cheerups will be small - limited to 141 characters. Members will be able to promote Cheerups that they like and maybe even boost the reputation of the Cheerupper.
-
+The world can be a depressing place. Your task is to create an app that will allow people to create and share "Cheer Ups" - happy little quips to brighten other peoples' days. Cheer Ups will be small - limited to 141 characters.
+*Members will be able to promote Cheer Ups that they like and maybe even boost the reputation of the Cheer Upper.
+*bonus
 
 *****
 
@@ -22,11 +23,11 @@ __Goals__
 
 __Bronze__ 
 
-An app where cheerups can be viewed by public (users)- and new ones created / editable / deleteable - by me (creator). Deployed via Heroku site. light blue background - yellow cheerup background.
+An app where cheerups can be viewed by public (users)- and new ones created / editable / deleteable . Deployed via Heroku site. 
 
 __Silver__ 
 
-Users profiles exist (passport). Then they can make new cheerups. Also edit and delete ones they made. 
+Users profiles exist (Passport working). Then they can make new cheerups. Also edit and delete ones they made. 
 
 Silver and a half
 
@@ -36,11 +37,13 @@ __Gold__
 
 Let users choose one of three background colors.
 
-Users can upvote / down vote the cherups like reddit or stackoverflow or twitter
+Users can upvote / down vote the cherr ups like reddit or stackoverflow.
 
+*bonus
 
 __Platnium__ 
-Cheerups will be shown by rank on main page .
+
+Cheerups will be shown by rank on main page.
 
 Your profile shows if any of your cheerups are in top nine on main page. 
 
@@ -54,26 +57,39 @@ Click a user to see ones they made.
 
 __Current Features__
 
-full crud for users and cheerups - css on all pages
+Full CRUD (create read update delete) / RESTful routes for users and cheer ups.
 
-about to start trying to get passport hooked up.
+Css on all pages.
+
+Login page just for decoration until can get Passport working.
 
 *****
 
 __Technologies Used__
 
 ```
-<HTML> .CSS { background-color: blue;} Javascript, Repository on Git hub,  Node JS - runtime, Express js -framework, MongoDB - node.js Driver, Mongoose ODM - object modeling, Handlebars (hbs) - templates, Cross-Origin Resource Sharing (CORS) - middleware, Body-Parser - middleware, & Method-Override - middleware.
+<HTML> .CSS { background-color: blue;} Javascript, Repository on Git hub,  Node JS - runtime, Express js -framework, MongoDB - node.js Driver, Mongoose ODM - object modeling, Handlebars (hbs) - templates, Cross-Origin Resource Sharing (CORS) - middleware, Body-Parser - middleware, & Method-Override - middleware. Deployment via Heroku site.
 ```
 
 __coming soon__ 
 
 ```
-passport for user authenticity and accounts + deploymeny via heroku site
+
+Passport for user authenticity and accounts.
+Moving up through the goals.  
 
 ```
 __Find it__
 
-source = https://github.com/BrianLoveGa/project-2-cheerupApp
+Source = https://github.com/BrianLoveGa/project-2-cheerupApp
 
-deployed on the interwebs at = 
+Deployed on the interwebs at = 
+
+
+__Contribute__
+
+Find it above - use the with-passport branch if you can help with that
+
+Use the help-me if helping with anyhting else (like upvote and down vote of cheer ups...). 
+
+THANKS!
