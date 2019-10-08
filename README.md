@@ -23,7 +23,7 @@ __Goals__
 
 __Bronze__ 
 
-An app where cheerups can be viewed by public (users)- and new ones created / editable / deleteable . Deployed via Heroku site. 
+An app where cheerups can be viewed by public (users)- and new ones created / editable / deleteable . Deployed via Heroku & Atlas sites. 
 
 __Silver__ 
 
