@@ -59,7 +59,7 @@ __Current Features__
 
 Full CRUD (create read update delete) / RESTful routes for users and cheer ups.
 
-Css on all pages.
+Css on all pages. but the view from local host and the view on live chrome page is a little different - also the green second header bar floats wierd in Firefox ... My Mom and Girlfriend were able to access it and see it on their phones. Still needs more but want to add more features before style at this point.
 
 Login page just for decoration until can get Passport working.
 
@@ -68,15 +68,21 @@ Login page just for decoration until can get Passport working.
 __Technologies Used__
 
 ```
-<HTML> .CSS { background-color: blue;} Javascript, Repository on Git hub,  Node JS - runtime, Express js -framework, MongoDB - node.js Driver, Mongoose ODM - object modeling, Handlebars (hbs) - templates, Cross-Origin Resource Sharing (CORS) - middleware, Body-Parser - middleware, & Method-Override - middleware. Deployment via Heroku site.
+<HTML> .CSS { background-color: blue;} Javascript, Repository on Git hub,  
+Node JS - runtime, Express js -framework, MongoDB - node.js Driver, 
+Mongoose ODM - object modeling, Handlebars (hbs) - templates, 
+Cross-Origin Resource Sharing (CORS) - middleware, 
+Body-Parser - middleware, & Method-Override - middleware. 
+Deployment via Heroku site With Atlas: Mongo  DB cluster.
 ```
+
 *****
+
 __Offically Deployed__
 
 <!-- Picture of heroku dashboard of build sucess and deployed cheerups app -->
 
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%202.19.43%20PM.png " Ofically deployed on Heroku / the interwebs")
-
 
 
 
