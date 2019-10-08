@@ -88,8 +88,16 @@ Deployed on the interwebs at =
 
 __Contribute__
 
-Find it above - use the with-passport branch if you can help with that
+Find the master above.... or
 
-Use the help-me if helping with anyhting else (like upvote and down vote of cheer ups...). 
+
+Please use the with-passport branch if you can help with that feature.
+
+https://github.com/BrianLoveGa/project-2-cheerupApp/tree/with-passport
+
+Use the help-me branch if helping with anything else (like up vote and down vote of cheer ups, style suggestions, etc.). 
+
+https://github.com/BrianLoveGa/project-2-cheerupApp/tree/help-me
+
 
 THANKS!
