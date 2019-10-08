@@ -15,53 +15,53 @@ const User = require("../model/userApp");
 
 
 
-/// list all users 
-
-router.get('/users', (req, res) =>{
-    User.find({})
-    .then(peeps => {
-        res.render("users", {peeps});
-    })
-    .catch(err => console.error(err));
+/// make an account page 
+router.get("/signup", (req, res) => {
+  res.render("newAccount", { message: req.flash('signupMessage') });
 });
+
+
+router.post('/signup', (req, res) => {
+var signupStrategy = passport.authenticate('local-signup', {
+  successRedirect : '/cheerUps',
+  failureRedirect : '/users/signup',
+  failureFlash : true
+});
+
+return signupStrategy(req, res);
+})
+
 
 
 /// login page 
 router.get("/login" , (req, res) => {
-    res.render("login", { message: req.flash('loginMessage')});
+  res.render("login", { message: req.flash('loginMessage')});
 });
 
 router.post('/login', (req, res) => {
-  var loginProperty = passport.authenticate('local-login', {
-    successRedirect : '/cheerUps',
-    failureRedirect : '/login',
-    failureFlash : true
-  });
+var loginProperty = passport.authenticate('local-login', {
+  successRedirect : '/cheerUps',
+  failureRedirect : '/login',
+  failureFlash : true
+});
 
-  return loginProperty(req, res);
+return loginProperty(req, res);
 });
 
 
 
+// GET /logout
+router.get('/logout', (req, res) => {
+  req.logout()
+  res.redirect('/')
+})
 
+// did not make secret page like in class example but just in case it breaks something I'll keep it in...
 
-
-
-
-/// make an account page 
-router.get("/signup", (req, res) => {
-    res.render("newAccount", { message: req.flash('signupMessage') } );
-});
-
-
-router.post('/', (req, res) => {
-  var signupStrategy = passport.authenticate('local-signup', {
-    successRedirect : '/cheerUps',
-    failureRedirect : '/signup',
-    failureFlash : true
-  });
-
-  return signupStrategy(req, res);
+// Restricted (cool people only!)
+router.get('/secret', (req, res) => {
+  if (req.isAuthenticated()) res.render('secret')
+  res.redirect('/')
 })
 
 
@@ -70,7 +70,28 @@ router.post('/', (req, res) => {
 
 
 
+
+
+
+
+
+
+
+
 //// old routes from before passport - will likely need to tweek once its working...
+
+
+
+/// list all users 
+
+router.get('/users', (req, res) =>{
+  User.find({})
+  .then(peeps => {
+      res.render("users", {peeps});
+  })
+  .catch(err => console.error(err));
+});
+
 
 // show user page blank 
 router.get("/showUser", (req, res) => {

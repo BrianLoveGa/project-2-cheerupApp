@@ -1,20 +1,22 @@
 /// declaring the strategy for the signup
-var passport=require('passport');
+const passport = require('passport');
 
-var LocalStrategy=require('passport-local').Strategy;
+const LocalStrategy = require('passport-local').Strategy;
 
-var User=require('../model/userApp');
-var bcrypt   = require('bcrypt-nodejs');
+const User = require('../model/userApp');
+const bcrypt = require('bcrypt-nodejs');
+
+
+  // To use the session with passport
+
 module.exports = function(passport) {
 
-  // To use the session with passport, we need to create two new methods in config/passport.js
-
-// To keep a user logged in, we will need to serialize their user.id to save it to their session
+    // To keep a user logged in, we will need to serialize their user.id to save it to their session
 passport.serializeUser(function(user, callback) {
   callback(null, user.id);
 });
 
-// second method will then be called every time there is a value for passport in the session cookie
+    // second method will then be called every time there is a value for passport in the session cookie
 passport.deserializeUser(function(id, callback) {
   User.findById(id, function(err, user) {
       callback(err, user)
@@ -36,8 +38,8 @@ passport.deserializeUser(function(id, callback) {
       } else {
       // There is no email registered with this emai
 	// Create a new user
-	var newUser            = new User();
-	newUser.local.email    = email;
+	let newUser  = new User();
+	newUser.local.email = email;
 	newUser.local.password = newUser.encrypt(password);
 
 	newUser.save(function(err) {

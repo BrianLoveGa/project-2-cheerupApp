@@ -1,11 +1,13 @@
+ <h3> Create your Cheer up Account </h3>
+ 
   {{#if message}}
     <div class="alert alert-danger">{{message}}</div>
   {{/if}}
 
-<h3> Create your Cheer up Account </h3>
+
 <div class="newAct">
    
-<form name="formNwUsr" action="/users" method="POST">
+<form name="formNwUsr" action="/" method="POST">
     <section>
 <label for "email">Email used to make cheer Ups account:</label> 
     <input class="form-control" type="text" name="email" id="email" maxlength="40" size="42">

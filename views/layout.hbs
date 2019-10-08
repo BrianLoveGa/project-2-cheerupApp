@@ -17,8 +17,12 @@
 <section >
     <div class ="top">
         <a href="/cheerUps"> HOME </a>
+        {{#if currentUser}}
+        <a href="/logout">Logout {{currentUser.local.email}}</a>
+         {{else}}
          <a href="/users/login"> Log In </a>
           <a href="/users/signup"> New Account </a>
+          {{/if}}
            <a href="/cheerUps/newCheer"> Add a Cheer Up </a>
             <a href="/users/users"> User list </a>
     </div>

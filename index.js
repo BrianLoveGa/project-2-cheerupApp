@@ -17,22 +17,23 @@ const bodyParser = require('body-parser')
 const app = express();
 
 
-app.use(morgan('dev'))
-app.use(cookieParser())
-app.use(bodyParser())
-
-app.use(session({ secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS' }));
-app.use(flash());
-
-passportConfig(passport);
-app.use(passport.initialize());
-app.use(passport.session());
-
-
-// find controllers
+// // find controllers
 const userController = require("./controller/users");
 
 const cheerController = require('./controller/cheer');
+
+
+
+// passport things to work
+
+app.use(morgan('dev'))
+app.use(cookieParser())
+app.use(bodyParser())
+app.use(flash());
+passportConfig(passport);
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(session({secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS'}))
 
 
 
@@ -65,6 +66,21 @@ app.use("/users", userController);
 app.get("/", (req, res) => {
   res.redirect("/cheerUps");
 });
+
+
+
+app.use(function(req, res, next) {
+  res.locals.currentUser = req.user
+  next();
+});
+
+
+
+
+
+
+
+
 
 
 /// connection mon

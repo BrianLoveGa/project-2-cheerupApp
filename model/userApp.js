@@ -6,16 +6,18 @@ const bcrypt = require('bcrypt-nodejs')
 const User = new mongoose.Schema({
 
     local: {
-        email: String,
-        password: String
+      usernameField: String,
+      passwordField: String
       }
 });
 
 
+User.methods.encrypt = function(passwordField) {
+  return bcrypt.hashSync(passwordField, bcrypt.genSaltSync(8), null)
+}
 
-
-User.methods.validPassword = function(password) {
-  return bcrypt.compareSync(password, this.local.password);
+User.methods.validPassword = function(passwordField) {
+  return bcrypt.compareSync(passwordField, this.local.passwordField);
 };
 
 

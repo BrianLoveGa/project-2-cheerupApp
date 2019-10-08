@@ -2,21 +2,14 @@
 <div class="editAct">
     
 <form name="form1" action="/users/{{id}}?_method=put" method="POST">
-<section>
-<label for="Name">Your Name</label>
-    <input type="text" name="name" value="{{name}}" maxlength="40" size="42">
-</section>
-<section></section>
-<label for="username">Cheer Ups User Name</label>
-    <input type="text" name="username" value="{{username}}" maxlength="40" size="42">
 
 <section>
 <label for "email">email to make a cheer up account</label> 
-    <input type="text" name="email" value="{{email}}" maxlength="40" size="42">
+    <input type="text" name="email" value="{{usernameField}}" maxlength="40" size="42">
 </section>
 <section>
 <label for "password">password for cheer up site</label> 
-    <input type="text" name="password" value="{{password}}" maxlength="25" size="26">
+    <input type="text" name="password" value="{{passwordField}}" maxlength="25" size="26">
 </section>
 <section>
     <input class="button" type="submit" value="Update">
