@@ -127,14 +127,31 @@ Huge thanks to Ma Familia - my favorite testing group!
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.49.29%20PM.png " It works - my dad made a post")
 
 
+My dad was able to acces and post a Cheer Up !
+
 <!-- my Mom and Sis made a post too!  -->
 
 
 
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.12%20PM.png "It really works - my mom and sis made a post")
 
+My Mom and Sis made posts too - Iknow my mom only has her phone so it at least kinda renders ok on small screens.
 
 <!-- my Sis (darocklobsta) & Girlfriend (Hotmom92) were able to make accounts! Whoo-Hoo!  -->
 
 ![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.35%20PM.png "Kinda cool - accounts can be made - although it will be cooler when I can get actual passport auth to work so the login does something")
 
+My Sis (Heather nicole) & Girlfriend (Michelle Fryer) were able to make accounts! Whoo-Hoo! 
+Although it will be much cooler when I can actually get passport auth  working so the login does something.
+
+
+*****
+
+Stay Tuned Folks .... 
+__More Coming Soon__
+
+I Promise !   ️Untill then  ✌ ☮ & 💟  (peace and love)!
+
+or 
+
+🖖  🅛🅘🅥🅔 🅛🅞🅝🅖 🅐🅝🅓 🅟🅡🅞🅢🅟🅔🅡  🖖 
