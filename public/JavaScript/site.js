@@ -19,12 +19,18 @@ app.use("/cheerups", cheerController);
 
 
 function upVoteCheer () {
-
     let value = parseInt(document.querySelectorAll(this.title).value, 10);
     value = isNaN(value) ? 0 : value; 
     value ++;
     document.getElementsByClassName(this.title).value = value;
 };
 
+
+document.querySelectorAll("upVoteBtn") = buttons;
+
+/// some sort of loop for buttons?
+
+
+buttons.addEventListener("click", upVoteCheer());
 
 
