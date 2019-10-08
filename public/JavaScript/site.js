@@ -23,7 +23,7 @@ function upVoteCheer () {
     let value = parseInt(document.querySelectorAll(this.title).value, 10);
     value = isNaN(value) ? 0 : value; 
     value ++;
-    document.getElementById(this.title).value = value;
+    document.getElementsByClassName(this.title).value = value;
 };
 
 
