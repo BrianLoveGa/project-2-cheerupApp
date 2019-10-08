@@ -50,7 +50,7 @@ app.use(_("_method"));
 // use hbs for views
 app.set('view engine', 'hbs'); 
 
-// styles
+// styles & other files
 app.use(express.static("public"));
 
 // use cors

@@ -101,7 +101,7 @@ router.get("/showUser", (req, res) => {
 
 // show one user by user id- 
 router.get("/showUser/:id", (req, res) => {
-  Users.findOne({_id: req.params.id}).then(user => {
+  User.findOne({_id: req.params.id}).then(user => {
     res.render("showUser", user);
   })
   .catch(err => console.error(err));
