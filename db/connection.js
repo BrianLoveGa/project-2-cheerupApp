@@ -20,12 +20,13 @@ mongoose.set('useUnifiedTopology', true);
 mongoose
   .connect(mongoURI)
   .then(instance =>
-    console.log(`Connected to db: ${instance.connections[0].name}`)
+    console.log(`Connected ➢ to ⛄ cool ❄ db: ${instance.connections[0].name}`)
   )
   .catch(error => console.log("Connection failed!", error));
 
 
-/// make it connected
+/// make it connected - original - was working
+
 // mongoose.connect("mongodb://localhost/cheerups",
 // () => {
 //   console.log("Now connected!!! 🚀 Warp Speed Engage !!!");
