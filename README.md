@@ -124,14 +124,17 @@ Huge thanks to Ma Familia - my favorite testing group!
 
 <!-- my Dad made a new cheerup and I saw it -->
 
-![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.49.29%20PM.png" It works - my dad made a post")
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.49.29%20PM.png " It works - my dad made a post")
+
 
 <!-- my Mom and Sis made a post too!  -->
 
-![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.12%20PM.png" It really works - my mom and sis made a post")
 
 
-<!-- my Sis (darocklobsta) & Girlfriend were able to make accounts! Whoo-Hoo!  -->
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.12%20PM.png "It really works - my mom and sis made a post")
 
-![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.35%20PM.png" It really works - accounts can be made - although it will be cooler when I can get actual passport auth to work so the login does something")
+
+<!-- my Sis (darocklobsta) & Girlfriend (Hotmom92) were able to make accounts! Whoo-Hoo!  -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.35%20PM.png "Kinda cool - accounts can be made - although it will be cooler when I can get actual passport auth to work so the login does something")
 
