@@ -8,10 +8,17 @@ const _= require('method-override');
 const passport = require('passport');
 const passportConfig = require('./config/passport');
 const flash = require('connect-flash');
-const morgan = require('morgan')
-const cookieParser = require('cookie-parser')
-const session = require('express-session')
-const bodyParser = require('body-parser')
+const morgan = require('morgan');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const path = require('path');
+const expressValidator = require('express-validator');
+const LocalStrategy = require('passport-local').Strategy;
+const mongo = require('mongodb');
+const mongoose=require('mongoose');
+mongoose.connect('mongodb://localhost/users');
+const db = mongoose.connection;
 
 // instantiate express
 const app = express();
