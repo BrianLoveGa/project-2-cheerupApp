@@ -73,9 +73,9 @@ __Technologies Used__
 *****
 __Offically Deployed__
 
-<!-- Picture below of home page of cheerups app -->
+<!-- Picture of heroku dashboard of build sucess and deployed cheerups app -->
 
-![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-07%20at%2012.22.05%20PM%20copy.png "Screen shot from the Cheer Ups app prototype")
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%202.19.43%20PM.png " Ofically deployed on Heroku / the interwebs")
 
 
 
@@ -110,3 +110,22 @@ https://github.com/BrianLoveGa/project-2-cheerupApp/tree/help-me
 
 
 THANKS!
+*****
+
+__My testers__
+
+Huge thanks to Ma Familia - my favorite testing group!
+
+<!-- my Dad made a new cheerup and I saw it -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.49.29%20PM.png" It works - my dad made a post")
+
+<!-- my Mom and Sis made a post too!  -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.12%20PM.png" It really works - my mom and sis made a post")
+
+
+<!-- my Sis (darocklobsta) & Girlfriend were able to make accounts! Whoo-Hoo!  -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/Screen%20Shot%202019-10-08%20at%203.50.35%20PM.png" It really works - accounts can be made - although it will be cooler when I can get actual passport auth to work so the login does something")
+
