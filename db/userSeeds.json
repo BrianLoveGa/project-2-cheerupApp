@@ -1,26 +1,17 @@
 [
 
     {
-        "name": "Brian Loveless",
-        "username": "ADMIN",
-        "email": "Brian.loveless1@gmail.com",
-        "password": "WORDpass42"
-
+        "usernameField": "Brian.loveless1@gmail.com",
+        "passwordField": "WORDpass42"
     },
 
     {
-        "name": "Jimmy Fakeman",
-        "username": "Fakeman1",
-        "email": "Iamnotreal@noemail.org",
-        "password": "1234pass"
-
+        "usernameField": "Iamnotreal@noemail.org",
+        "passwordField": "1234pass"
     },
 
     {
-        "name": "Stacey Fakegirl",
-        "username": "Fakegirl2",
-        "email": "Imaginaryperson@notreal.org",
-        "password": "pass1234"
-        
+        "usernameField": "Imaginaryperson@notreal.org",
+        "passwordField": "pass1234"
     }
 ]
