@@ -1,5 +1,5 @@
 const People = require('../model/userApp');
-const people = require('./UserSeeds.json');
+const peeps = require('./UserSeeds.json');
 
 
 // clear the database of all user records insert original seeds
@@ -8,7 +8,7 @@ const people = require('./UserSeeds.json');
 People.deleteMany({})
 	.then(() => {
 		console.log('old users gone cptn');
-		return People.insertMany(people);
+		return People.insertMany(peeps);
 		// create user files from seeds
 	})
 	.then(() => {
