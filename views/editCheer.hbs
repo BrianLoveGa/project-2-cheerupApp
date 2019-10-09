@@ -2,23 +2,31 @@
 <div class="editCheer">
 <form name="formEC" action="/cheerUps/{{id}}?_method=put" method="POST">
     <section class="firstNC">
+        <h3> 
     <label for="title">Cheer Up Title</label>
     <input type="text" name="title" value="{{title}}" maxlength="40" size="42">
+    </h3>
     </section>
     <section class="secondNC">
+        <h3> 
     <label for="cheerup">Cheer Up Quip</label>
     <input type="text" name="cheerup" value="{{cheerup}}"         maxlength="141" size="142" >
+    </h3>
     </section>
     <section class="thirdNC">
+        <h3> 
     <label for="creator">Creator of this Cheer Up</label> 
     <input type="text" name="creator" value="{{creator}}">
+    </h3>
     </section>
     {{!-- <section class="fourthNC">
+        <h3> 
     <label for="backgroundColor"> Back Ground Color </label>
     <div class="colorbuttons"></div>
     <input class="buttony" type="radio" name="color" value="yellow"> <div class ="buttonlbly">Yellow  </div>
     <input class="buttonp" type="radio" name="color" value="pink"> <div class="buttonlblp">Pink  </div>
     <input class="buttong" type="radio" name="color" value="green"> <div class="buttonlblg">Green </div>
+    </h3>
     </section> --}}
 
     <input class="buttonNCS" type="submit" value="Update">
