@@ -9,22 +9,24 @@
     <section class="firstNC">
         <h3> 
     <label for="title">Cheer Up Title</label>
-    <input type="text" name="title" value="{{title}}" maxlength="40" size="42">
+    <input type="text" name="title" value="{{title}}" maxlength="40" size="42"  required>
     </h3>
     </section>
     <section class="secondNC">
         <h3> 
     <label for="cheerup">Cheer Up Quip</label>
-    <input type="text" name="cheerup" value="{{cheerup}}"         maxlength="141" size="142" >
+    <input type="text" name="cheerup" value="{{cheerup}}"         maxlength="141" size="142" required >
     </h3>
     </section>
     <section class="thirdNC">
         <h3> 
     <label for="creator">Creator of this Cheer Up</label> 
-    <input type="text" name="creator" value="{{creator}}">
+    <input type="text" name="creator" value="{{creator}}"  required>
     </h3>
     </section>
-    {{!-- <section class="fourthNC">
+    {{!-- 
+    For when I get the background choices figured out
+    <section class="fourthNC">
         <h3> 
     <label for="backgroundColor"> Back Ground Color </label>
     <div class="colorbuttons"></div>
@@ -39,7 +41,9 @@
 </form>
 </div>
 
-<h3> Click the delete button below to permanently remove a Cheer Up .</h3>
+<h3> Click the delete button below to remove a Cheer Up .
+
+</h3>
 <form name ="bye" action="/cheerups/{{id}}?_method=delete" method="post">
     <input class="buttondelete" type="submit" value="Delete">
 </form>

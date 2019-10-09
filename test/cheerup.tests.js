@@ -7,6 +7,8 @@ const api = supertest('http://localhost:3000');
 
 /// TESTING 
 
+// might finish set up later for practice - but it works so why test?
+
 // 1 GET /cheers which will list out all cheerups / homepage
 
 
