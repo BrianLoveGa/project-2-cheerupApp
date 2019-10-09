@@ -129,7 +129,7 @@ h4 {
 
 
 .cheersmain {
-    display: -webkit-flex;
+    
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -142,8 +142,8 @@ h4 {
     
     font-size: 30px;
     background-color: rgb(247, 242, 109);
-    width: 300px;
-    height: 300px;
+    width: 552px;
+    height: 200px;
     text-align: center;
     border-radius: 3px;
     padding: 10px;
@@ -321,6 +321,14 @@ h1 {
     padding: 1px;
     }
 .cheerup{
-    color:black
+    color:black;
+    font-size: 20px;
+    background-color: rgb(247, 242, 109);
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Mansalva', cursive, serif;
     }
 }
