@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 body{
     background-color: aqua;
 
@@ -19,13 +20,12 @@ h1{
 }
 
 h2{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 h3{
-    font-size: 20px;
-    border: 3px solid red;
-    border-radius: 25px;
+    font-size: 25px;
+
     
 }
 
@@ -33,6 +33,15 @@ h2, h3, a {
     text-align: center;
     text-decoration: none;
     color:black;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    border: 3px solid red;
+    border-radius: 25px;
+    text-align: center;
+
 }
 
 .top {
