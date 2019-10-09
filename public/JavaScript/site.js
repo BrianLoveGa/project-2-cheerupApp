@@ -1,4 +1,4 @@
-// console.log("TESTING CHECK CHECK");
+ console.log("TESTING CHECK CHECK");
 
 // // express
 // const express = require("express");
