@@ -63,6 +63,22 @@ Full CRUD (create read update delete) / RESTful routes for users and cheer ups.
 
 Css on all pages. but the view from local host and the view on live chrome page is a little different - also the green second header bar floats wierd in Firefox ... My Mom and Girlfriend were able to access it and see it on their phones. Still needs more but want to add more features before style at this point.
 
+And although it needs tweeking it is at least correct so far.
+
+<!-- W3C Validated Css Logo-->
+
+![alt text](https://jigsaw.w3.org/css-validator/images/vcss " Valid CSS")
+
+```
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+    
+```
+
+
 Login page just for decoration until I can get Passport working.
 
 *****
