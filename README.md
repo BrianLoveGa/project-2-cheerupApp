@@ -55,15 +55,33 @@ Click a user to see ones they made.
 
 
 *****
+__Planning__
 
+Started with this as my template with high aspirations .
+
+<!-- model of home page of cheerups app -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/home%20page%20mock%20up.png "Screen shot from the Cheer Ups app prototype")
+
+*****
+
+And here's my crude plan for routing and connections .
+
+<!-- model of routes for cheerups app made in paint -->
+
+![alt text](https://github.com/BrianLoveGa/project-2-cheerupApp/blob/master/planning/req%20res%20cycle%20plan.png "model of routes for cheerups app made in paint")
+
+*****
 
 __Current Features__
 
 Full CRUD (create read update delete) / RESTful routes for users and cheer ups.
 
+The login page is really just for decoration until I can get Passport Auth fully working. SHould have started there and added cheerups instead of building user routes and trying to change them over after they were built.
+
 Css on all pages. but the view from local host and the view on live chrome page is a little different - also the green second header bar floats wierd in Firefox ... My Mom and Girlfriend were able to access it and see it on their phones. Still needs more but want to add more features before style at this point.
 
-And although it needs tweeking it is at least correct so far.
+And although it still needs some minor tweeking it is at least technically correct and error free so far.
 
 <!-- W3C Validated Css Logo-->
 
@@ -77,9 +95,6 @@ And although it needs tweeking it is at least correct so far.
     </a>
     
 ```
-
-
-Login page just for decoration until I can get Passport working.
 
 *****
 
