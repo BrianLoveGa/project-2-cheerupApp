@@ -48,35 +48,6 @@ h4 {
 
 }
 
-@-moz-document url-prefix() {
-  
-    .moveDown{
-        margin:50px;
-        padding:10px;
-        height:150px;
-        
-    }
-    .top {
-        margin:10px 0;
-    }
-
-    .second {
-        margin:10px 0;
-    }
-
-    .buttondelete {
-     
-        text-align: center;
-        font-size: 10px;
-        text-align: center;
-        padding: 0;
-        margin-left: 50%;
-        margin-right: 50%;
-        margin-top: 3%;
-        margin-bottom: 8%;
-    }
-
-}
 
 .top {
     padding: 10px;
@@ -261,6 +232,38 @@ h5 {
     margin-bottom: 8%;
 }
 
+/*  because .... welll ..... firefox  */
+
+@-moz-document url-prefix() {
+  
+    .moveDown{
+        margin:50px;
+        padding:10px;
+        height:150px;
+        
+    }
+    .top {
+        margin:10px 0;
+        
+    }
+
+    .second {
+        margin:10px 0;
+    }
+
+    .buttondelete {
+     
+        text-align: center;
+        font-size: 10px;
+        text-align: center;
+        padding: 0;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-top: 3%;
+        margin-bottom: 8%;
+    }
+
+}
 
 /* still a little wonky if at less than 300px wide - but dang thats small - get a better phone already */
 
