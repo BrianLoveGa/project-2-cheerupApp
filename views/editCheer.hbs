@@ -1,3 +1,8 @@
+<div class="moveDown">
+    
+</div>
+
+
 <h3> Edit your Cheer up </h3>
 <div class="editCheer">
 <form name="formEC" action="/cheerUps/{{id}}?_method=put" method="POST">
@@ -29,12 +34,12 @@
     </h3>
     </section> --}}
 
-    <input class="buttonNCS" type="submit" value="Update">
+    <input class="buttondelete" type="submit" value="Update">
 
 </form>
 </div>
 
 <h3> Click the delete button below to permanently remove a Cheer Up .</h3>
-<form action="/cheerups/{{id}}?_method=delete" method="post">
+<form name ="bye" action="/cheerups/{{id}}?_method=delete" method="post">
     <input class="buttondelete" type="submit" value="Delete">
 </form>

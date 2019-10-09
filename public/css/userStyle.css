@@ -1,114 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
-body{
-    background-color: aqua;
 
-}
 
-.head {
-    display: flex;
-    flex-direction: column;
-  
-}
 
 h1{
     font-family: 'Happy Monkey', cursive, sans-serif;
-    font-size:40px;
+    font-size:35px;
     text-align: center;
-
 }
-
-
-.top {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 5% 0;
-    padding: 5px;
-    border: 5px solid salmon;
-    border-radius: 10px;
-
-}
-
-.top a{
-    -webkit-flex: 1 auto;
-    flex: 1 auto;
-    text-decoration: none;
-    background-color: blue;
-    color:  rgb(172, 172, 245);
-    font-size: 30px;
-    justify-content: space-between;
-    text-align: center;
-
-}
-
-.top a:hover{
-    -webkit-flex: 1 auto;
-    flex: 1 auto;
-    text-decoration: none;
-    background-color:rgb(54, 54, 248);
-    color:white;
-    font-size: 32px;
-    justify-content: space-between;
-    border-radius: 10px;
-    text-align: center;
-
-}
-
-.second{
-
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: green;
-    margin: 2% 0;
-    font-size: 25px;
-    text-align: center;
-    align-self: center;
-    border: 3px yellowgreen solid;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.second:hover {
-
-    font-size: 28px;
-    background-color: yellowgreen;
-    border: 5px black solid;
-    border-radius: 13px;
-    padding: 12px;
-    
-
-}
-
-
-.second a {
-
-    
-    text-decoration: none;
-    background-color: antiquewhite;
-    color: crimson;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 5px;
-
-}
-
 
 .usersView{
     list-style-type: none;
     padding: 10px;
     font-size: 25px;
-    margin:5px;
+    margin: 120px 50px;
 }
 
 .login {
-
     position: relative;
     top: 50%;
     left: 5%;
@@ -123,12 +31,10 @@ h1{
     font-size: 25px;
     border: 3px solid black;
     border-radius: 5px;
-    
 }
 
 
 .newAct, .editAct {
-
     position: relative;
     top: 50%;
     left: 5%;
@@ -141,105 +47,22 @@ h1{
     font-size: 25px;
     border: 3px solid black;
     border-radius: 5px;
-
 }
 
 
 .newAct{
-
     background-color: rgb(245, 212, 140);
     color: rgb(0, 0, 0);
 }
 
 
 .editAct{
-
     background-color: rgb(245, 181, 239);
     color: rgb(4, 8, 255);
-
 }
-.showUser{
 
+
+.showUser{
     background-color: beige;
 }
 
-
-/* still a little wonky if at less than 300px wide - but dang thats small - get a better phone already */
-
-@media only screen and (max-width: 419px) {
-    h1 {
-        font-family: 'Happy Monkey', cursive, sans-serif;
-        font-size:30px;
-        text-align: center;
-        color:black;
-        }
-    .head {
-        display: flex;
-        flex-direction: column; 
-        }
-    .top {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-self: flex-start;
-        margin: 3% 0;
-        padding: 3px;
-        border: 3px solid salmon;
-        border-radius: 5px;
-        }
-    .top a{
-        -webkit-flex: 1 auto;
-        flex: 1 auto;
-        flex-shrink: 2;
-        text-decoration: none;
-        background-color: blue;
-        color:  rgb(172, 172, 245);
-        font-size: 20px;
-        justify-content: flex-start;
-        text-align: center;
-        }
-    .top a:hover{
-        -webkit-flex: 1 auto;
-        flex: 1 auto;
-        text-decoration: none;
-        background-color:rgb(54, 54, 248);
-        color:white;
-        font-size: 25px;
-        justify-content: flex-start;
-        border-radius: 5px;
-        text-align: center;
-        }
-    .second{
-        flex-wrap: nowrap;
-        flex-shrink: 2;
-        position: relative;
-        background-color: green;
-        margin: 2% 0;
-        font-size: 20px;
-        text-align: center;
-        align-self: flex-end;
-        border: 3px yellowgreen solid;
-        border-radius: 8px;
-        padding: 1px;
-        }
-    .second:hover {
-        font-size: 22px;
-        background-color: yellowgreen;
-        border: 5px black solid;
-        border-radius: 13px;
-        padding: 4px;
-        }
-    .second a {
-        text-decoration: none;
-        background-color: antiquewhite;
-        color: crimson;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 1px;
-        }
-    .cheerup{
-        color:black
-        }
-}
