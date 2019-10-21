@@ -3,9 +3,9 @@ mongoose.Promise = Promise;
 
 let mongoURI = "";
 if (process.env.NODE_ENV === "production") {
-  mongoURI = process.env.DB_URL;
+    mongoURI = process.env.DB_URL;
 } else {
-  mongoURI = "mongodb://localhost/cheerups";
+    mongoURI = "mongodb://localhost/cheerups";
 }
 
 /// from mongoose .js "To fix all deprecation warnings, follow the below steps:"
@@ -17,11 +17,11 @@ mongoose.set('useUnifiedTopology', true);
 
 
 mongoose
-  .connect(mongoURI)
-  .then(instance =>
-    console.log(`Connected ➢ to ⛄ cool ❄ db: ${instance.connections[0].name}`)
-  )
-  .catch(error => console.log("Connection 😢 failed!", error));
+    .connect(mongoURI)
+    .then(instance =>
+        console.log(`Connected ➢ to ⛄ cool ❄ db: ${instance.connections[0].name}`)
+    )
+    .catch(error => console.log("Connection 😢 failed!", error));
 
 
 /// let that birdy fly

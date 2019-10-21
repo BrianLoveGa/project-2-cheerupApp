@@ -23,13 +23,13 @@
     "cookie": "^0.4.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "hbs": "^4.0.5",
+    "hbs": "^4.0.6",
     "lodash": "^4.17.15",
     "method-override": "^3.0.0",
-    "mocha": "^6.2.1",
+    "mocha": "^6.2.2",
     "mongo": "^0.1.0",
-    "mongoose": "^5.7.3",
-    "nodemon": "^1.19.3",
+    "mongoose": "^5.7.5",
+    "nodemon": "^1.19.4",
     "supertest": "^4.0.2"
   }
 }
