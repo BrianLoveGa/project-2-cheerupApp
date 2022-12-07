@@ -18,11 +18,11 @@
   "homepage": "https://github.com/BrianLoveGa/project-2-cheerupApp#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "chai": "^4.2.0",
     "cookie": "^0.4.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "hbs": "^4.0.6",
     "lodash": "^4.17.15",
     "method-override": "^3.0.0",
